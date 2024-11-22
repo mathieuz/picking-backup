@@ -358,6 +358,63 @@
         ]
     },
     {
+        "id": "0fa72eb392038713",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "url": "/pstprnt",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "6887db15facf2f9c",
+                "9f36704573a025db"
+            ]
+        ]
+    },
+    {
+        "id": "6887db15facf2f9c",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9f36704573a025db",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.4.244/pstprnt",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "45d1b1362f6fed7e",
         "type": "serial-port",
         "name": "",
