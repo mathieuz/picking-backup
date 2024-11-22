@@ -314,5 +314,67 @@
         "x": 460,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "a9d71d2fd03471d3",
+        "type": "serial in",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "name": "",
+        "serial": "45d1b1362f6fed7e",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "269cfd843eecd901"
+            ]
+        ]
+    },
+    {
+        "id": "269cfd843eecd901",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "balanca",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "2905a85f8ebace9c"
+            ]
+        ]
+    },
+    {
+        "id": "45d1b1362f6fed7e",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM1",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
     }
 ]
