@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../uibuilder/images/node-blue.ico">
+
+    <!-- Your own CSS -->
+    <link type="text/css" rel="stylesheet" href="./index.css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <!-- #region Supporting Scripts. These MUST be in the right order. Note no leading / - socket.io no longer needed  -->
+    <script defer src="../uibuilder/uibuilder.iife.min.js"></script>
+    <script defer src="./index.js">/* OPTIONAL: Put your custom code in that */</script>
+    <!-- #endregion -->
+
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div class="flex-container">
+        <img id="logo" src="images/DW.jpeg" style="width:100px;height:100px;"></img>
+        <div>
+            <h1 id="titulo">PICKING</h1>
+            <h1 id="dica">DIGITE O NÚMERO DE AMOSTRAS PARA CONTAR</h1>
+        </div>
+        <div style="display: flex; flex-direction: column; margin-right: 5px;">
+            <label id="user">Usuário</label>
+            <button id="navegacao" onclick="menuShow()">NAVEGAÇÃO</button>
+        </div>
+        <!-- Menu -->
+        <ul id="menu" class="menu">
+            <li><button onclick="menuSelect('LOGIN')">LOGIN</button></li>
+            <li><button onclick="menuSelect('CONTADOR')">CONTADOR</button></li>
+            <li><button id="menu_max_mix" onclick="openFullscreen()">MAXIMIZAR/MINIMIZAR</button></li>
+        </ul>
+        <!-- Keypad -->
+        <div id="numerickeypad" class="keypad">
+            <label type="text" id="msg">Olha:</label>
+            <div class="flex-container2">
+                <label class="display" type="text" id="display">
+            </div>
+            <div class="flex-container2">
+                <button class="key" onclick="keypadPress('7')">7</button>
+                <button class="key" onclick="keypadPress('8')">8</button>
+                <button class="key" onclick="keypadPress('9')">9</button>
+            </div>
+            <div class="flex-container2">
+                <button class="key" onclick="keypadPress('4')">4</button>
+                <button class="key" onclick="keypadPress('5')">5</button>
+                <button class="key" onclick="keypadPress('6')">6</button>
+            </div>
+            <div class="flex-container2">
+                <button class="key" onclick="keypadPress('1')">1</button>
+                <button class="key" onclick="keypadPress('2')">2</button>
+                <button class="key" onclick="keypadPress('3')">3</button>
+            </div>
+            <div class="flex-container2">
+                <button id="key-dot" class="key" onclick="keypadPress('.')">.</button>
+                <button class="key" onclick="keypadPress('0')">0</button>
+                <button class="key" onclick="keypadPress('⇐')">⇐</button>
+            </div>
+            <div class="flex-container2">
+                <button class="key-cancel" onclick="keypadPress('CANCELAR')">CANCELAR</button>
+                <button id="key-confirm" class="key-confirm">CONFIRMAR</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ################################################################################################ -->
+    <!-- ############################################## LOGIN ########################################### -->
+    <!-- ################################################################################################ -->
+    
+    <div id="div-pai-login">
+        <!-- Formulário -->
+        <div class="login-div-form">
+            <div class="login-div-form1">
+                <label>RE</label>
+                <label>TURNO</label>
+                <label>OPERAÇÃO</label>
+            </div>
+            <div class="login-div-form2">
+                <input type="number" id="input_RE">
+                <input type="number" id="input_turno" disabled>
+                <label class="input-operacao">PICKING</label>
+            </div>
+        </div>
+        <div style="text-align: center;margin-top: 1%;">
+            <label class="login-table-title">OPERADORES LOGADOS</label>
+        </div>
+        <!-- Tabela -->
+        <div>
+            <table class="login-table-header">
+                <thead class="login-th">
+                    <td class="login-td">RE</td>
+                    <td class="login-td">NOME</td>
+                    <td class="login-td">DATA</td>
+                    <td class="login-td">TURNO</td>
+                    <td class="login-td">DATA</td>
+                </thead>
+            </table>
+        </div>
+        <!-- Tabela -->
+        <div style="height: 250px; overflow: auto">
+            <table id="tabela_logins" class="login-table-users">
+                <tbody>
+                    <tr>
+                        <td class="login-td">RE</td>
+                        <td class="login-td">NOME</td>
+                        <td class="login-td">DATA</td>
+                        <td class="login-td">TURNO</td>
+                        <td class="login-td">DATA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- LOG -->
+        <div style="margin-bottom: 1%;">
+            <label class="login-log-label">LOG</label>
+            <label class="login-log-action">JOÃO FEZ ALGO</label>
+        </div>
+        <!-- Botões -->
+        <div style="text-align: center;">
+            <button class="login-btn-logoff">LOGOFF</button>
+            <button class="login-btn-login" onclick="login()">LOGIN</button>
+            <button class="login-btn-voltar" disabled>VOLTAR</button>
+        </div>
+    </div>
+
+    <!-- ################################################################################################ -->
+    <!-- ############################################ CONTADOR ########################################## -->
+    <!-- ################################################################################################ -->
+
+        <div id="div-pai-contador" style="display: flex; flex-direction: row; justify-content: space-around; padding-top: 85px;">
+
+            <!-- Contador -->
+            <div style="border-radius: 10px; background-color: #484848; padding: 3%; border-style: solid; border-width: 10; border-color: rgb(253,185,19); width: 800px; height: fit-content;">
+
+                <!-- Contagem Peso -->
+                <div id="div-contagem-peso" class="flex-container2">
+                    <!-- Fração peso/PMP -->
+                    <div style="margin-left: 30px; margin-right: 30px; line-height: 20px; width: 30%;">
+                        <h2 style="font-size: 30px; color: rgb(253,185,19); font-family: exo;">PESO [Kg]</h1>
+                            <h1 id="display_peso" style="font-size: 60px; color: white;">0,300</h1>
+                            <hr>
+                            <h2 style="font-size: 30px; color: rgb(253,185,19); font-family: exo;">PMP [Kg]</h1>
+                                <h1 id="display_pmp" style="font-size: 60px; color: white;">0.00</h1>
+                                <button class="btn-amostragem"
+                                    onclick="showKeypad('Número de amostras:', inputNumAmostras, false)">RECALCULAR
+                                    PMP</button>
+                    </div>
+                    <!-- Resultado -->
+                    <h1 style="font-size: 60px;color: white; margin-right: 30px; font-family: exo; width: 10%;">=</h1>
+                    <div class="flex-container2">
+                        <h1 id="display_quantidade"
+                            style="font-size: 100px;color: white; background-color: red; font-family: exo;">150</h1>
+                        <h2 style="font-size: 50px; color: rgb(253,185,19); font-family: exo; margin-left: 10px;">
+                            un.
+                            </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tabela_ordens_picadas -->
+            <div>
+                <div style="max-height: 450px; overflow: auto">
+                    <table id="tabela_ordens_picadas">
+                        <thead>
+                            <th style="width:100px;">OP</th>
+                            <th style="width:100px;">RECURSO</th>
+                            <th style="width:100px;">PRODUTO</th>
+                            <th style="width:100px;">QUANTIDADE</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>        
+        </div>
+
+</body>
+
+</html>
