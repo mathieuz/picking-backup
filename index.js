@@ -20,7 +20,7 @@ sendToNR("carregar_tabela_op", 0);
 
 window.onload = function() {
     setInterval(displayNextImage, 5000);
-    menuSelect("LOGIN");
+    menuSelect("CONTADOR");
 }
 
 function displayNextImage(){
@@ -50,25 +50,13 @@ function menuSelect(action){
             document.getElementById("div-pai-login").style.display = "block";
             document.getElementById("div-pai-contador").style.display = "none";
             updateHeaderInfoPage("LOGIN", "FAÇA LOGIN PARA CONTINUAR");
-            //login();
             
             break;
         
         case "CONTADOR":
-
-            //Verificando se há um operador logado. Se sim, redreciona para a página. Se não, volta pra página de login.
-            const operadorData = getLoggedInOperadorData();
-            if (operadorData) {
-                document.getElementById("div-pai-login").style.display = "none";
-                document.getElementById("div-pai-contador").style.display = "flex";
-                updateHeaderInfoPage("PICKING", "DIGITE O NÚMERO DE AMOSTRAS PARA CONTAR");
-
-            } else {
-                alert("Por favor, realize o login para prosseguir.");
-                document.getElementById("div-pai-login").style.display = "block";
-                document.getElementById("div-pai-contador").style.display = "none";
-                updateHeaderInfoPage("LOGIN", "FAÇA LOGIN PARA CONTINUAR");
-            }
+            document.getElementById("div-pai-login").style.display = "none";
+            document.getElementById("div-pai-contador").style.display = "flex";
+            updateHeaderInfoPage("PICKING", "DIGITE O NÚMERO DE AMOSTRAS PARA CONTAR");
 
             break;
 
