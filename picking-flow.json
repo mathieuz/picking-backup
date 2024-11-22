@@ -400,7 +400,7 @@
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://192.168.4.244/pstprnt",
+        "url": "http://192.168.4.251/pstprnt",
         "tls": "",
         "persist": false,
         "proxy": "",
