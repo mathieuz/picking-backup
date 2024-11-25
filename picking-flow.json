@@ -38,7 +38,8 @@
             "1c993cc0ec72ade2",
             "b8a2280c43a4bc96",
             "9860ab64a3c60901",
-            "d89b90a1a0cdb877"
+            "d89b90a1a0cdb877",
+            "e17d65d1630a152a"
         ],
         "x": 54,
         "y": -21,
@@ -158,7 +159,7 @@
         "y": 200,
         "wires": [
             [
-                "d015aa2b301d4fae"
+                "0cb9aa2fc599b347"
             ],
             [
                 "3e58cd5009990d32"
@@ -174,7 +175,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/ordensProducao?centroCusto=11902&page=1&pagesize=85",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/ordensProducao?centroCusto=11902&page=1&pagesize=85&previsaoTermino={{dataTermino}}",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -246,8 +247,8 @@
         "links": [
             "9860ab64a3c60901"
         ],
-        "x": 945,
-        "y": 180,
+        "x": 1175,
+        "y": 160,
         "wires": []
     },
     {
@@ -263,7 +264,8 @@
         "y": 100,
         "wires": [
             [
-                "1c993cc0ec72ade2"
+                "1c993cc0ec72ade2",
+                "e17d65d1630a152a"
             ]
         ]
     },
@@ -276,7 +278,7 @@
         "links": [
             "13b6c57e87c42fbc"
         ],
-        "x": 945,
+        "x": 935,
         "y": 220,
         "wires": []
     },
@@ -407,11 +409,67 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "0cb9aa2fc599b347",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "formataPrevisaoTermino",
+        "func": "const hoje = new Date();\nconst amanha = new Date(hoje);\namanha.setDate(hoje.getUTCDate() + 1);\n\nlet diaAmanha = \"\";\nlet mesAmanha = \"\";\nlet anoAmanha = amanha.getUTCFullYear();\n\ndiaAmanha = amanha.getUTCDate() >= 0 && amanha.getUTCDate() <= 9 ? `0${amanha.getUTCDate()}` : amanha.getUTCDate();\nmesAmanha = amanha.getUTCMonth() >= 0 && amanha.getUTCMonth() <= 9 ? `0${amanha.getUTCMonth() + 1}` : amanha.getUTCMonth() + 1;\n\nconst previsaoTermino = `${anoAmanha}${mesAmanha}${diaAmanha}`;\n\nmsg.dataTermino = previsaoTermino;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 180,
+        "wires": [
+            [
+                "d015aa2b301d4fae",
+                "264a355889a6be6e"
+            ]
+        ]
+    },
+    {
+        "id": "264a355889a6be6e",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 410,
+        "x": 1220,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e17d65d1630a152a",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 150,
         "y": 20,
         "wires": []
     },
