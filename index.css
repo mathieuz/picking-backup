@@ -18,7 +18,7 @@ body, html {
 
   #titulo {
     font-family: exo;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: normal;
     /*width: 1450px*/;
     text-align: center;
@@ -27,7 +27,7 @@ body, html {
 
   #dica {
     font-family: exo;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: normal;
     width: 900px;
     text-align: center;
@@ -40,7 +40,7 @@ body, html {
 
   #user {
     font-family: exo;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: normal;
     /*width: 100%;*/
     text-align: center;
