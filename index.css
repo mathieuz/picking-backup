@@ -499,7 +499,7 @@ td {
   margin-top: 5%;
 }
 
-button:disabled {
+.disabled {
   user-select: none;
   -webkit-user-drag: none;
   -moz-user-select: none;
@@ -508,14 +508,19 @@ button:disabled {
   opacity: 30%;
 }
 
-input:disabled {
-  pointer-events: none;
-  opacity: 60%;
-}
-
 #tabela_ordens_picadas th,
 td {
   font-size: 28px;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+#tabela_etiquetas th, #tabela_etiquetas td {
+  font-size: 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#input_numero_etiqueta:focus {
+  background-color: lightgreen;
 }
