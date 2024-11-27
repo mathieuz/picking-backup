@@ -226,6 +226,7 @@ function openFullscreen() {
     }
 }
 
+
 /* ##################################################################################################### */
 /* ############################################ TABELAS ################################################ */
 /* ##################################################################################################### */
@@ -311,6 +312,47 @@ function tabelaOrdensPicadasOnClick(tabela_id, row){
     */
 }
 
+var arrayEtiquetasLidas = [];
+
+//Evento no input de etiqueta da movimentação
+document.getElementById("input_numero_etiqueta").onchange = (e) => {
+    let numeroEtiqueta = e.target.value;
+
+    let isNumeroEtiquetaRepetido = arrayEtiquetasLidas.find(etiqueta => etiqueta.etiqueta === numeroEtiqueta);
+    if (!isNumeroEtiquetaRepetido) {
+
+        //Verificando se o número da etiqueta é um valor superior a 2000. Se sim, o código lido é referente uma vaga. Dispara na API.
+        if (numeroEtiqueta === "0101") {
+
+            const operadorData = getLoggedInOperadorData();
+
+            const movimentacaoData = arrayEtiquetasLidas.map(etiqueta => {
+                return {
+                    identificacao: etiqueta.etiqueta,
+                    local_destino_id: numeroEtiqueta,
+                    tipo_id: 1,
+                    login_id: operadorData.id
+                }
+            });
+
+            sendToNR("scan_movimentacao", movimentacaoData);
+            //loadTableData("tabela_etiquetas", []);
+            arrayEtiquetasLidas = [];
+            alert("Enviado no node red!");
+            return;
+        }
+
+        //Verificando se o número da etiqueta compõe-se apenas de números. Se sim, adiciona na array.
+        if (numeroEtiqueta.match(/^[0-9]+$/)) {
+            arrayEtiquetasLidas.push({"etiqueta": numeroEtiqueta});
+        }
+    }
+
+    e.target.value = "";
+    document.getElementById("input_numero_etiqueta").focus();
+    loadTableData("tabela_etiquetas", arrayEtiquetasLidas);
+}
+
 
 /* ##################################################################################################### */
 /* ########################################### WEBSOCKET ############################################### */
@@ -326,8 +368,6 @@ function sendToNR(topic, payload){
 
 // Listen for incoming messages from Node-RED and action
 uibuilder.onChange('msg', (msg) => {
-
-    console.log(msg);
 
     switch(msg.topic) {
         case "balanca":
@@ -346,6 +386,10 @@ uibuilder.onChange('msg', (msg) => {
         
         case "login":
             checkLogin(msg.payload, msg.statusCode);
+            break;
+        
+        case "movimentacao":
+            console.log(JSON.parse(msg.payload));
             break;
     } 
 })
