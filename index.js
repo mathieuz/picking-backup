@@ -181,12 +181,23 @@ function checkLogin(payload, statusCode) {
     if (statusCode === 201) {
         setLoggedOperadorData(data.ID, data.nome);
         menuSelect("CONTADOR");
-        console.log(getLoggedInOperadorData());
         return;
     }
 
     //Se deu erro, exibe a mensagem de erro vindo do payload.
     alert(data.erro + ".");
+}
+
+function checkMovimentacao(statusCode) {
+    if (statusCode === 201) {
+        alert("Movimentação realizada com sucesso!");
+        loadTableData("tabela_etiquetas", []);
+        arrayEtiquetasLidas = [];
+
+        return;
+    }
+
+    alert("Houve um erro ao realizar a movimentação. Tente novamente.");
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -315,42 +326,45 @@ function tabelaOrdensPicadasOnClick(tabela_id, row){
 var arrayEtiquetasLidas = [];
 
 //Evento no input de etiqueta da movimentação
-document.getElementById("input_numero_etiqueta").onchange = (e) => {
-    let numeroEtiqueta = e.target.value;
+document.getElementById("input_numero_etiqueta").onkeydown = (e) => {
+    if (e.key === "Enter") {
+            
+        let numeroEtiqueta = e.target.value;
 
-    let isNumeroEtiquetaRepetido = arrayEtiquetasLidas.find(etiqueta => etiqueta.etiqueta === numeroEtiqueta);
-    if (!isNumeroEtiquetaRepetido) {
+        let isNumeroEtiquetaRepetido = arrayEtiquetasLidas.find(etiqueta => etiqueta.etiqueta === numeroEtiqueta);
+        if (!isNumeroEtiquetaRepetido) {
 
-        //Verificando se o número da etiqueta é um valor superior a 2000. Se sim, o código lido é referente uma vaga. Dispara na API.
-        if (numeroEtiqueta === "0101") {
+            //Verificando se o número da etiqueta é um valor menor que 2000. Se sim, o código lido é referente uma vaga. Dispara na API.
+            if (numeroEtiqueta.match(/^[0-9]+$/) && Number(numeroEtiqueta) < 2000) {
 
-            const operadorData = getLoggedInOperadorData();
+                const operadorData = getLoggedInOperadorData();
 
-            const movimentacaoData = arrayEtiquetasLidas.map(etiqueta => {
-                return {
-                    identificacao: etiqueta.etiqueta,
-                    local_destino_id: numeroEtiqueta,
-                    tipo_id: 1,
-                    login_id: operadorData.id
-                }
-            });
+                const movimentacaoData = arrayEtiquetasLidas.map(etiqueta => {
+                    return {
+                        identificacao: etiqueta.etiqueta,
+                        local_destino_id: numeroEtiqueta,
+                        tipo_id: 1,
+                        login_id: operadorData.id
+                    }
+                });
 
-            sendToNR("scan_movimentacao", movimentacaoData);
-            //loadTableData("tabela_etiquetas", []);
-            arrayEtiquetasLidas = [];
-            alert("Enviado no node red!");
-            return;
+                sendToNR("scan_movimentacao", movimentacaoData);
+
+                return;
+            }
+
+            //Verificando se o número da etiqueta compõe-se apenas de números. Se sim, adiciona na array.
+            if (numeroEtiqueta.match(/^[0-9]+$/)) {
+                arrayEtiquetasLidas.push({ "etiqueta": numeroEtiqueta });
+            } else {
+                alert("Etiqueta inválida.");
+            }
         }
 
-        //Verificando se o número da etiqueta compõe-se apenas de números. Se sim, adiciona na array.
-        if (numeroEtiqueta.match(/^[0-9]+$/)) {
-            arrayEtiquetasLidas.push({"etiqueta": numeroEtiqueta});
-        }
+        e.target.value = "";
+        document.getElementById("input_numero_etiqueta").focus();
+        loadTableData("tabela_etiquetas", arrayEtiquetasLidas);
     }
-
-    e.target.value = "";
-    document.getElementById("input_numero_etiqueta").focus();
-    loadTableData("tabela_etiquetas", arrayEtiquetasLidas);
 }
 
 
@@ -389,7 +403,7 @@ uibuilder.onChange('msg', (msg) => {
             break;
         
         case "movimentacao":
-            console.log(JSON.parse(msg.payload));
+            checkMovimentacao(msg.statusCode);
             break;
     } 
 })
