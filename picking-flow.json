@@ -1,5 +1,501 @@
 [
     {
+        "id": "ae45f2cbf5df9a1f",
+        "type": "tab",
+        "label": "pickingv2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0de06912847e889f",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "login: faz requisição com as informações do operador para tentar login",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1511ac037e335352",
+            "0d47e7594de4f15b",
+            "13b6c57e87c42fbc"
+        ],
+        "x": 14,
+        "y": 1179,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "ad9c02e207160b06",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "carregar_tabela_op: carrega a tabela de OPs e produtos da página de contagem",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "93b4b7f9aeceb3db",
+            "1c993cc0ec72ade2",
+            "b8a2280c43a4bc96",
+            "9860ab64a3c60901",
+            "f3117f71876de5d8",
+            "572ec910e71aafe7",
+            "1f2370a215a26c80",
+            "6a152377063a37a9",
+            "e85bb975cc2a8ad2",
+            "40cf2d77782218fe",
+            "8d01e4e40a55f9ca",
+            "6bbae599e3181228",
+            "5cd8006b1f2c51a6",
+            "7c2e4c39f93284c9",
+            "1bacd5491fe16568",
+            "9726910130528e2d",
+            "bc951981997e9380",
+            "ba72228506384ee7"
+        ],
+        "x": 14,
+        "y": 159,
+        "w": 512,
+        "h": 1002
+    },
+    {
+        "id": "79c03b6ee5c89ad1",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Comunicação com a balança",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a9d71d2fd03471d3",
+            "269cfd843eecd901"
+        ],
+        "x": 114,
+        "y": 1279,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "814e2363db264d82",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "scan_movimentacao: realiza a movimentação das etiquetas",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ea594df6c54eabcc",
+            "8a27a32bb227898d",
+            "f2aacad60334b29e"
+        ],
+        "x": 14,
+        "y": 1379,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "4c32cf1dc8cca9a6",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Redirecionamento para impressora",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0fa72eb392038713",
+            "9f36704573a025db",
+            "b38b6f53fa1c7e93"
+        ],
+        "x": 14,
+        "y": 59,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "2905a85f8ebace9c",
+        "type": "uibuilder",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "topic": "",
+        "url": "pickingv2",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "iife-blank-client",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": true,
+        "sourceFolder": "src",
+        "deployedVersion": "7.0.4",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "editurl": "vscode://fileC:\\Users\\masilva\\.node-red\\uibuilder/pickingv2/?windowId=_blank",
+        "x": 750,
+        "y": 1000,
+        "wires": [
+            [
+                "de961e6a8e40f126"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "93b4b7f9aeceb3db",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "listar_qtd",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "listar_qtd",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 1120,
+        "wires": [
+            [
+                "2905a85f8ebace9c"
+            ]
+        ]
+    },
+    {
+        "id": "1511ac037e335352",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "0de06912847e889f",
+        "name": "login",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "login",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 1220,
+        "wires": [
+            [
+                "2905a85f8ebace9c"
+            ]
+        ]
+    },
+    {
+        "id": "de961e6a8e40f126",
+        "type": "switch",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "carregar_tabela_op",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "login",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "scan_movimentacao",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 890,
+        "y": 1000,
+        "wires": [
+            [
+                "0cb9aa2fc599b347"
+            ],
+            [
+                "3e58cd5009990d32"
+            ],
+            [
+                "2e42201a9f6a6689"
+            ]
+        ]
+    },
+    {
+        "id": "1c993cc0ec72ade2",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "listaOPs",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/ordensProducao?centroCusto=11902&page=1&pagesize=85&previsaoTermino={{dataTermino}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "1bacd5491fe16568"
+            ]
+        ]
+    },
+    {
+        "id": "b8a2280c43a4bc96",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "extraiProdutos",
+        "func": "let array_empenhos = [];\n\nmsg.OPs.forEach(function(op) {\n    op.EMPENHOS.forEach(function(empenho) {\n        array_empenhos.push(\n            {\n                OP: op.OP,\n                PA: op.PRODUTO,\n                RECURSO: op.RECURSO,\n                PRODUTO: empenho.PRODUTOEMPENHO,\n                QUANTIDADE: empenho.QUANTIDADEEMPENHO,\n                PREVISAOINICIO: `${op.PREVISAOINICIO[6]}${op.PREVISAOINICIO[7]}/${op.PREVISAOINICIO[4]}${op.PREVISAOINICIO[5]}/${op.PREVISAOINICIO[0]}${op.PREVISAOINICIO[1]}${op.PREVISAOINICIO[2]}${op.PREVISAOINICIO[3]}`\n            }\n        );\n    });\n});\n\nmsg.payload = array_empenhos;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 1120,
+        "wires": [
+            [
+                "93b4b7f9aeceb3db"
+            ]
+        ]
+    },
+    {
+        "id": "0d47e7594de4f15b",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "0de06912847e889f",
+        "name": "fazLogin",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.62:1880/kanban/v1/login",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 200,
+        "y": 1220,
+        "wires": [
+            [
+                "1511ac037e335352"
+            ]
+        ]
+    },
+    {
+        "id": "d015aa2b301d4fae",
+        "type": "link out",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Link Topic Out: carregar_tela",
+        "mode": "link",
+        "links": [
+            "9860ab64a3c60901"
+        ],
+        "x": 1235,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "9860ab64a3c60901",
+        "type": "link in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "Link Topic In: carregar_tela",
+        "links": [
+            "d015aa2b301d4fae"
+        ],
+        "x": 55,
+        "y": 200,
+        "wires": [
+            [
+                "1c993cc0ec72ade2"
+            ]
+        ]
+    },
+    {
+        "id": "3e58cd5009990d32",
+        "type": "link out",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Link Topic Out: login",
+        "mode": "link",
+        "links": [
+            "13b6c57e87c42fbc"
+        ],
+        "x": 995,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "13b6c57e87c42fbc",
+        "type": "link in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "0de06912847e889f",
+        "name": "Link Topic In: login",
+        "links": [
+            "3e58cd5009990d32"
+        ],
+        "x": 55,
+        "y": 1220,
+        "wires": [
+            [
+                "0d47e7594de4f15b"
+            ]
+        ]
+    },
+    {
+        "id": "a9d71d2fd03471d3",
+        "type": "serial in",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "79c03b6ee5c89ad1",
+        "name": "",
+        "serial": "45d1b1362f6fed7e",
+        "x": 190,
+        "y": 1320,
+        "wires": [
+            [
+                "269cfd843eecd901"
+            ]
+        ]
+    },
+    {
+        "id": "269cfd843eecd901",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "79c03b6ee5c89ad1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "balanca",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1320,
+        "wires": [
+            [
+                "2905a85f8ebace9c"
+            ]
+        ]
+    },
+    {
+        "id": "0fa72eb392038713",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "4c32cf1dc8cca9a6",
+        "name": "",
+        "url": "/pstprnt",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "9f36704573a025db"
+            ]
+        ]
+    },
+    {
+        "id": "9f36704573a025db",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "4c32cf1dc8cca9a6",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://72.0.0.253/pstprnt",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "b38b6f53fa1c7e93"
+            ]
+        ]
+    },
+    {
+        "id": "0cb9aa2fc599b347",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "formataPrevisaoTermino",
+        "func": "const hoje = new Date();\nconst amanha = new Date(hoje);\namanha.setDate(hoje.getUTCDate() + 1);\n\nlet diaAmanha = \"\";\nlet mesAmanha = \"\";\nlet anoAmanha = amanha.getUTCFullYear();\n\ndiaAmanha = amanha.getUTCDate() >= 0 && amanha.getUTCDate() <= 9 ? `0${amanha.getUTCDate()}` : amanha.getUTCDate();\nmesAmanha = amanha.getUTCMonth() >= 0 && amanha.getUTCMonth() <= 9 ? `0${amanha.getUTCMonth() + 1}` : amanha.getUTCMonth() + 1;\n\nconst previsaoTermino = `${anoAmanha}${mesAmanha}${diaAmanha}`;\n\nmsg.dataTermino = previsaoTermino;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 960,
+        "wires": [
+            [
+                "d015aa2b301d4fae"
+            ]
+        ]
+    },
+    {
+        "id": "ee798e7c668b7139",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "url": "/kanban/v2/movimentar",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1600,
+        "wires": [
+            [
+                "9f7556d5205d6a82",
+                "4adf83b32dbe669e"
+            ]
+        ]
+    },
+    {
         "id": "4adf83b32dbe669e",
         "type": "http response",
         "z": "ae45f2cbf5df9a1f",
@@ -7,7 +503,771 @@
         "statusCode": "201",
         "headers": {},
         "x": 380,
-        "y": 940,
+        "y": 1600,
         "wires": []
+    },
+    {
+        "id": "9f7556d5205d6a82",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "ea594df6c54eabcc",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "814e2363db264d82",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/kanban/v2/movimentar/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 210,
+        "y": 1420,
+        "wires": [
+            [
+                "8a27a32bb227898d"
+            ]
+        ]
+    },
+    {
+        "id": "8a27a32bb227898d",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "814e2363db264d82",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "movimentacao",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1420,
+        "wires": [
+            [
+                "2905a85f8ebace9c"
+            ]
+        ]
+    },
+    {
+        "id": "2e42201a9f6a6689",
+        "type": "link out",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Link Topic In: scan_movimentacao",
+        "mode": "link",
+        "links": [
+            "f2aacad60334b29e"
+        ],
+        "x": 995,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "f2aacad60334b29e",
+        "type": "link in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "814e2363db264d82",
+        "name": "Link Topic Out: scan_movimentacao",
+        "links": [
+            "2e42201a9f6a6689"
+        ],
+        "x": 55,
+        "y": 1420,
+        "wires": [
+            [
+                "ea594df6c54eabcc"
+            ]
+        ]
+    },
+    {
+        "id": "e993849531bcf72a",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "",
+        "outField": "testeQuery",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "DECLARE @ficha_tecnica_id INT = 121;\r\n\r\nSELECT \r\n\ta.title\r\n\t,CASE \r\n\t\tWHEN a.[type] = 'STRING' THEN av.[value_string]\r\n\t\tWHEN a.[type] = 'NUMBER' THEN CONVERT(VARCHAR(50), av.[value_number])\r\n\t\tWHEN a.[type] = 'BOOLEAN' THEN  CONVERT(VARCHAR(50), av.[value_boolean])\r\n\t\tWHEN a.[type] = 'DATE' THEN  CONVERT(VARCHAR(50), av.[value_date])\r\n\t\tELSE av.[value_list]\r\n\tEND AS valor\r\n\t,av.record_access_key\r\nFROM [datadriven_paranoa].[dbo].[dw_attribute_values] av\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = av.attribute_id\r\nWHERE technical_sheet_id = @ficha_tecnica_id\r\nORDER BY  av.record_access_key, title",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 800,
+        "y": 100,
+        "wires": [
+            [
+                "d74c9311615b0216"
+            ]
+        ]
+    },
+    {
+        "id": "bea581e2ea55b3db",
+        "type": "inject",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            [
+                "e993849531bcf72a"
+            ]
+        ]
+    },
+    {
+        "id": "d74c9311615b0216",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b38b6f53fa1c7e93",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "4c32cf1dc8cca9a6",
+        "name": "",
+        "statusCode": "201",
+        "headers": {},
+        "x": 420,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f3117f71876de5d8",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "",
+        "outField": "formulariosDatadriven",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "DECLARE @ficha_tecnica_id INT = 31;\r\n\r\nSELECT \r\n\ta.title\r\n\t,CASE \r\n\t\tWHEN a.[type] = 'STRING' THEN av.[value_string]\r\n\t\tWHEN a.[type] = 'NUMBER' THEN CONVERT(VARCHAR(50), av.[value_number])\r\n\t\tWHEN a.[type] = 'BOOLEAN' THEN  CONVERT(VARCHAR(50), av.[value_boolean])\r\n\t\tWHEN a.[type] = 'DATE' THEN  CONVERT(VARCHAR(50), av.[value_date])\r\n\t\tELSE av.[value_list]\r\n\tEND AS valor\r\n\t,av.record_access_key\r\nFROM [datadriven_paranoa].[dbo].[dw_attribute_values] av\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = av.attribute_id\r\nWHERE technical_sheet_id = @ficha_tecnica_id\r\nAND av.is_deleted = 0\r\nORDER BY  av.record_access_key, title",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "572ec910e71aafe7"
+            ]
+        ]
+    },
+    {
+        "id": "572ec910e71aafe7",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "recuperaFormulariosAccessKeys",
+        "func": "//Separando todos os record access keys dos formulários do datadriven.\nlet recordAccessKeys = [];\nmsg.formulariosDatadriven.forEach((formulario) => {\n    if (!recordAccessKeys.includes(formulario.record_access_key)) {\n        recordAccessKeys.push(formulario.record_access_key);\n    }\n});\nmsg.recordAccessKeys = recordAccessKeys;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "1f2370a215a26c80"
+            ]
+        ]
+    },
+    {
+        "id": "1f2370a215a26c80",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "recuperaFormularios",
+        "func": "//Recuperando os formulários do datadriven.\nlet formularios = [];\nmsg.recordAccessKeys.forEach((recordAccessKey) => {\n    formularios.push({\n        PA: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Código do Produto\").valor,\n        PI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"PI\").valor,\n        quantidadePI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Quantidade PI\").valor,\n        unidadeProducao: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Unidade de Produção\").valor\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "6a152377063a37a9"
+            ]
+        ]
+    },
+    {
+        "id": "6a152377063a37a9",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "filtraFormulariosSePAConstaNasOPs",
+        "func": "//Verifica se o PA (PRODUTO) de uma OP do array de OPs também consta em algum formulário do datadriven no campo de PA. Se sim, preserva o formulário em um novo array de formulários.\nlet formularios = [];\nmsg.payload.OPS.forEach((op) => {\n    msg.formularios.forEach((formulario) => {\n        if (formulario.PA === op.PRODUTO) {\n            formularios.push(formulario);\n        }\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "8d01e4e40a55f9ca"
+            ]
+        ]
+    },
+    {
+        "id": "e85bb975cc2a8ad2",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "montaEmpenhosPorPAPorPIEBancada",
+        "func": "//Pra cada PA, criando um objeto com array de empenhos associados.\nconst PAs = [];\nmsg.numeroPAs.forEach((numeroPA) => {\n\n    //Filtrando todos os formulários referentes a um número de PA.\n    const formulariosPA = msg.formularios.filter((formulario) => formulario.PA === numeroPA);\n\n    //Criando array de empenhos.\n    let empenhos = [];\n    formulariosPA.forEach((formularioPA) => {\n        \n        //Verifica se PI ou unidadeProducao já estão incluídos no array de empenhos. Caso não para ambos, adiciona um novo empenho.\n        if (!empenhos.find((empenho) => empenho.PI === formularioPA.PI) || !empenhos.find((empenho) => empenho.unidadeProducao === formularioPA.unidadeProducao)) {\n            if (formularioPA.PI !== \"\" && formularioPA.quantidadePI != 0) {\n                empenhos.push({ PI: formularioPA.PI, quantidadePI: Number(formularioPA.quantidadePI), unidadeProducao: formularioPA.unidadeProducao });\n            }\n        }\n\n        //Se caso unidade de produção já existir na array de empenhos, localiza o objeto e atualiza a quantidadePI.\n        if (empenhos.find((empenho) => empenho.unidadeProducao === formularioPA.unidadeProducao )) {\n            const empenhoIndex = empenhos.findIndex((empenho) => empenho.unidadeProducao === formularioPA.unidadeProducao);\n            empenhos[empenhoIndex].quantidadePI += Number(formularioPA.quantidadePI);\n        }\n    });\n\n    //Adicionando o novo objeto no array de PAs e seus empenhos.\n    PAs.push({ PA: numeroPA, empenhos: empenhos });\n\n});\nmsg.PAsPorBancada = PAs;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 620,
+        "wires": [
+            [
+                "40cf2d77782218fe"
+            ]
+        ]
+    },
+    {
+        "id": "40cf2d77782218fe",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "montaEmpenhosPorPAPorPI",
+        "func": "const PAs = [];\nmsg.numeroPAs.forEach((numeroPA) => {\n    const formulariosPA = msg.formularios.filter((formulario) => formulario.PA === numeroPA);\n\n    let empenhos = [];\n    formulariosPA.forEach((formularioPA) => {\n        if (!empenhos.find((empenho) => empenho.PI === formularioPA.PI)){\n            if (formularioPA.PI !== \"\" && formularioPA.quantidadePI !== \"0\") {\n                empenhos.push({ PI: formularioPA.PI, quantidadePI: Number(formularioPA.quantidadePI) })\n            }\n        } else {\n            const empenhoIndex = empenhos.findIndex((empenho) => empenho.PI === formularioPA.PI);\n            empenhos[empenhoIndex].quantidadePI += Number(formularioPA.quantidadePI);\n        }\n    });\n\n    PAs.push({ PA: numeroPA, empenhos: empenhos });\n});\nmsg.PAsPorPI = PAs;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 680,
+        "wires": [
+            [
+                "6bbae599e3181228"
+            ]
+        ]
+    },
+    {
+        "id": "8d01e4e40a55f9ca",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "recuperaNumeroPAs",
+        "func": "//Recuperando todos os PAs do formulário, sem duplicatas.\nconst numeroPAs = [];\nmsg.formularios.forEach((formulario) => {\n    if (!numeroPAs.includes(formulario.PA)) {\n        numeroPAs.push(formulario.PA);\n    }\n});\nmsg.payload = numeroPAs\nmsg.numeroPAs = numeroPAs;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "e85bb975cc2a8ad2"
+            ]
+        ]
+    },
+    {
+        "id": "5fea650ae76cc501",
+        "type": "comment",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "estrutura do PA separado por bancada (DATADRIVEN)",
+        "info": "",
+        "x": 640,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "99806ffae2faefa8",
+        "type": "comment",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "estrutura do PA sem separação por bancada (PROTHEUS)",
+        "info": "",
+        "x": 650,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "db3410862af7023a",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "url": "/testeapi",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 1680,
+        "wires": [
+            [
+                "72c91509150dab40"
+            ]
+        ]
+    },
+    {
+        "id": "a1fd0d8f31f82d8a",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 400,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "72c91509150dab40",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "function 1",
+        "func": "const arr = [\n    { \"id\": 0, \"val\": \"valor0\" },\n    { \"id\": 1, \"val\": \"valor1\" },\n    { \"id\": 2, \"val\": \"valor2\" },\n    { \"id\": 3, \"val\": \"valor3\" },\n    { \"id\": 4, \"val\": \"valor4\" },\n    { \"id\": 5, \"val\": \"valor5\" },\n    { \"id\": 6, \"val\": \"valor6\" },\n    { \"id\": 7, \"val\": \"valor7\" },\n    { \"id\": 8, \"val\": \"valor8\" },\n];\n\nconst obj = arr.find((obj) => obj.id === Number(msg.req.query.id));\n\nmsg.payload = obj;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1680,
+        "wires": [
+            [
+                "a1fd0d8f31f82d8a"
+            ]
+        ]
+    },
+    {
+        "id": "bcc691cbc252a65c",
+        "type": "inject",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1740,
+        "wires": [
+            [
+                "a4f0d8ea28c62a1e"
+            ]
+        ]
+    },
+    {
+        "id": "a4f0d8ea28c62a1e",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "function 2",
+        "func": "msg.payload = [\n  '0310220156',\n  '0310220136',\n  '0300340007',\n  '0300340008',\n  '0310220157',\n  '0310220135',\n  '0300220710'\n];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1740,
+        "wires": [
+            [
+                "2b774230bb1718ef"
+            ]
+        ]
+    },
+    {
+        "id": "2b774230bb1718ef",
+        "type": "split",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 390,
+        "y": 1740,
+        "wires": [
+            [
+                "b08fa550ad7c0e9d"
+            ]
+        ]
+    },
+    {
+        "id": "e620b16fabcb9c6b",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "b08fa550ad7c0e9d",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/estruturaProduto?produto={{payload}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 1740,
+        "wires": [
+            [
+                "84660f113672b951"
+            ]
+        ]
+    },
+    {
+        "id": "84660f113672b951",
+        "type": "join",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 670,
+        "y": 1740,
+        "wires": [
+            [
+                "e620b16fabcb9c6b"
+            ]
+        ]
+    },
+    {
+        "id": "6bbae599e3181228",
+        "type": "split",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "splitNumeroPAs",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 200,
+        "y": 740,
+        "wires": [
+            [
+                "7c2e4c39f93284c9"
+            ]
+        ]
+    },
+    {
+        "id": "5cd8006b1f2c51a6",
+        "type": "join",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "joinNumeroPAs",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 200,
+        "y": 860,
+        "wires": [
+            [
+                "9726910130528e2d"
+            ]
+        ]
+    },
+    {
+        "id": "7c2e4c39f93284c9",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/estruturaProduto?produto={{payload}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 190,
+        "y": 800,
+        "wires": [
+            [
+                "5cd8006b1f2c51a6"
+            ]
+        ]
+    },
+    {
+        "id": "1bacd5491fe16568",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "OPs",
+                "pt": "msg",
+                "to": "payload.OPS",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "f3117f71876de5d8"
+            ]
+        ]
+    },
+    {
+        "id": "9726910130528e2d",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "PAsProtheus",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 920,
+        "wires": [
+            [
+                "bc951981997e9380"
+            ]
+        ]
+    },
+    {
+        "id": "bc951981997e9380",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "compararERecuperarPAsValidosEInvalidos",
+        "func": "//Arrays dos PAs válidos e inválidos\nconst PAsPorPIOk = [];\nconst PAsPorPINotOk = [];\n\n//Percorrendo por cada PA do Protheus.\nmsg.PAsProtheus.forEach((PAProtheus) => {\n\n    //Recuperando os componentes/PIs referente ao PA.\n    const componentes = PAProtheus.COMPONENTES.filter((componente) => componente.TIPO != \"GG\");\n    \n    //Arrays com os empenhos válidos e inválidos.\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    //Percorrendo cada componente do PA.\n    componentes.forEach((componente) => {\n        const PADatadriven = msg.PAsPorPI.find((PA) => PA.PA === PAProtheus.CODIGOPRODUTO); //Recuperando o PA do Datadriven passando o número do PA do Protheus como parâmetro.\n        const PIDatadriven = PADatadriven.empenhos.find((PI) => PI.PI === componente.CODIGO); //Tentando recuperar o PI do PA do Datadriven passando o código do componente como parâmetro.\n\n        //Se o PI do Protheus existir em algum obj da array de empenhos do datadriven, compara se as quantidades de ambos batem.\n        if (PIDatadriven) {\n            if (PIDatadriven.quantidadePI === componente.QUANTIDADE) {\n                empenhosOk.push({ PI: PIDatadriven.PI, quantidadePI: PIDatadriven.quantidadePI }); //Se bater, mantém os valores de empenho.\n            } else {\n                empenhosNotOk.push({ PI: PIDatadriven.PI, quantidadePIDatadriven: PIDatadriven.quantidadePI, quantidadePIProtheus: componente.QUANTIDADE }); //Se não, informa a divergencia das quantidades entre ambos.\n            }\n\n        } else {\n            //Se não existir, erro de cadastro no Datadriven.\n            empenhosNotOk.push({ PI: componente.CODIGO, quantidadePIDatadriven: 0, quantidadePIProtheus: componente.QUANTIDADE });\n        }\n    });\n\n    PAsPorPIOk.push({ PA: PAProtheus.CODIGOPRODUTO, empenhos: empenhosOk });\n    PAsPorPINotOk.push({ PA: PAProtheus.CODIGOPRODUTO, empenhos: empenhosNotOk });\n});\n\n//Percorrendo por cada PA do Datadriven.\nmsg.PAsPorPI.forEach((PADatadriven) => {\n\n    //Array com os empenhos válidos e inválidos.\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    //Percorrendo cada empenho do PA.\n    PADatadriven.empenhos.forEach((empenho) => {\n        const PAProtheus = msg.PAsProtheus.find((PA) => PA.CODIGOPRODUTO === PADatadriven.PA);\n        const PIProtheus = PAProtheus.COMPONENTES.find((PI) => PI.CODIGO === empenho.PI);\n\n        //Se um PI do Datadriven existir em algum obj da array de componentes do protheus, compara se as quantidades de ambos batem.\n        if (PIProtheus) {\n            if (PIProtheus.QUANTIDADE === empenho.quantidadePI) {\n                const empenhoOk = { PI: PIProtheus.CODIGO, quantidadePI: PIProtheus.QUANTIDADE } //Recuperando o empenho para adicionar no array de empenhos.\n                const PAOk = PAsPorPIOk.find((PA) => PA.PA === PADatadriven.PA); //Recuperando o PA dos PAs válidos.\n\n                //Verifica se já há algum objeto parecido no array de empenhos de PAs válidos. Se não, adiciona.\n                if (!PAOk.empenhos.find((empenho) => empenho.PI === empenhoOk.PI && empenho.quantidadePI === empenhoOk.quantidadePI)) {\n                    empenhosOk.push(empenhoOk);\n                }\n\n            } else {\n                const empenhoNotOk = { PI: PIProtheus.CODIGO, quantidadePIDatadriven: empenho.quantidadePI, quantidadePIProtheus: PIProtheus.QUANTIDADE };\n                const PANotOk = PAsPorPINotOk.find((PA) => PA.PA === PADatadriven.PA);\n\n                //Verifica se já há algum objeto parecido no array de empenhos\n                if (!PANotOk.empenhos.find((empenho) => empenho.PI === empenhoNotOk.PI && empenho.quantidadePIDatadriven === empenhoNotOk.quantidadePIDatadriven && empenho.quantidadePIProtheus === empenhoNotOk.quantidadePIProtheus)) {\n                    empenhosNotOk.push(empenhoNotOk);\n                }\n            }\n\n        } else {\n            const empenhoNotOk = { PI: empenho.PI, quantidadePIDatadriven: empenho.quantidadePI, quantidadePIProtheus: 0 };\n            const PANotOk = PAsPorPINotOk.find((PA) => PA.PA === PADatadriven.PA);\n\n            //Verifica se já há algum objeto parecido no array de empenhos\n            if (!PANotOk.empenhos.find((empenho) => empenho.PI === empenhoNotOk.PI && empenho.quantidadePIDatadriven === empenhoNotOk.quantidadePIDatadriven && empenho.quantidadePIProtheus === empenhoNotOk.quantidadePIProtheus)) {\n                empenhosNotOk.push(empenhoNotOk);\n            }\n        }\n    });\n\n    const PADatadrivenIndex = PAsPorPIOk.findIndex((PA) => PA.PA === PADatadriven.PA);\n    empenhosOk.map((empenhoOk) => { PAsPorPIOk[PADatadrivenIndex].empenhos.push(empenhoOk) });\n    empenhosNotOk.map((empenhoNotOk) => { PAsPorPINotOk[PADatadrivenIndex].empenhos.push(empenhoNotOk) });\n});\n\nmsg.PAsPorPIOK = PAsPorPIOk;\nmsg.PAsPorPINotOk = PAsPorPINotOk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 980,
+        "wires": [
+            [
+                "b8a2280c43a4bc96",
+                "ba72228506384ee7"
+            ]
+        ]
+    },
+    {
+        "id": "ba72228506384ee7",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "45d1b1362f6fed7e",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM1",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "85b73a9da59d3b52",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "BD Datadriven Paranoa",
+        "server": "186.193.228.29",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "datadriven_paranoa",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
     }
 ]
