@@ -112,6 +112,26 @@
         "h": 82
     },
     {
+        "id": "d8bc70124c6dec23",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "API FTP Datadriven",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4e0a4c052a16253e",
+            "76f28cf8872a04fc",
+            "4838916082de9f72",
+            "34a853e1efb8d9a9",
+            "fc9c1671431ee222"
+        ],
+        "x": 14,
+        "y": 1479,
+        "w": 752,
+        "h": 122
+    },
+    {
         "id": "2905a85f8ebace9c",
         "type": "uibuilder",
         "z": "ae45f2cbf5df9a1f",
@@ -487,7 +507,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 160,
-        "y": 1600,
+        "y": 1920,
         "wires": [
             [
                 "9f7556d5205d6a82",
@@ -503,7 +523,7 @@
         "statusCode": "201",
         "headers": {},
         "x": 380,
-        "y": 1600,
+        "y": 1920,
         "wires": []
     },
     {
@@ -521,7 +541,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 380,
-        "y": 1540,
+        "y": 1860,
         "wires": []
     },
     {
@@ -878,7 +898,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 110,
-        "y": 1680,
+        "y": 2000,
         "wires": [
             [
                 "72c91509150dab40"
@@ -895,7 +915,7 @@
             "content-type": "application/json"
         },
         "x": 400,
-        "y": 1680,
+        "y": 2000,
         "wires": []
     },
     {
@@ -911,7 +931,7 @@
         "finalize": "",
         "libs": [],
         "x": 260,
-        "y": 1680,
+        "y": 2000,
         "wires": [
             [
                 "a1fd0d8f31f82d8a"
@@ -940,7 +960,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 120,
-        "y": 1740,
+        "y": 2060,
         "wires": [
             [
                 "a4f0d8ea28c62a1e"
@@ -960,7 +980,7 @@
         "finalize": "",
         "libs": [],
         "x": 260,
-        "y": 1740,
+        "y": 2060,
         "wires": [
             [
                 "2b774230bb1718ef"
@@ -980,7 +1000,7 @@
         "addname": "",
         "property": "payload",
         "x": 390,
-        "y": 1740,
+        "y": 2060,
         "wires": [
             [
                 "b08fa550ad7c0e9d"
@@ -1001,7 +1021,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 800,
-        "y": 1740,
+        "y": 2060,
         "wires": []
     },
     {
@@ -1021,7 +1041,7 @@
         "senderr": false,
         "headers": [],
         "x": 530,
-        "y": 1740,
+        "y": 2060,
         "wires": [
             [
                 "84660f113672b951"
@@ -1050,7 +1070,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 670,
-        "y": 1740,
+        "y": 2060,
         "wires": [
             [
                 "e620b16fabcb9c6b"
@@ -1232,6 +1252,105 @@
         "wires": []
     },
     {
+        "id": "4e0a4c052a16253e",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "",
+        "url": "/datadriven/v1/ftp",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1540,
+        "wires": [
+            [
+                "4838916082de9f72"
+            ]
+        ]
+    },
+    {
+        "id": "76f28cf8872a04fc",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 660,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "4838916082de9f72",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "joinQueryArrays",
+        "func": "if (!Array.isArray(msg.req.query.coluna)) {\n    msg.req.query.coluna = [msg.req.query.coluna];\n}\n\nif (!Array.isArray(msg.req.query.coluna_valor_filtro)) {\n    msg.req.query.coluna_valor_filtro = [msg.req.query.coluna_valor_filtro];\n}\n\nmsg.req.query.coluna = msg.req.query.coluna.join(\",\");\nmsg.req.query.coluna_valor_filtro = msg.req.query.coluna_valor_filtro.join(\";\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1540,
+        "wires": [
+            [
+                "fc9c1671431ee222"
+            ]
+        ]
+    },
+    {
+        "id": "34a853e1efb8d9a9",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "fc9c1671431ee222",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "mssqlCN": "79735c2dcc39920b",
+        "name": "ftpDatadriven",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": "0",
+        "query": "exec dwprc_ft_lista \r\n\t@codigo_ftp = '{{req.query.codigo_ftp}}'\r\n\r\n\t{{#req.query.coluna}}\r\n\t\t,@colunas_select = '{{req.query.coluna}}'\r\n\t{{/req.query.coluna}}\r\n\r\n\t{{#req.query.coluna_filtro_nome}}\r\n\t\t,@codigo_filtro = '{{req.query.coluna_filtro_nome}}'\r\n\t{{/req.query.coluna_filtro_nome}}\r\n\r\n\t{{#req.query.coluna_valor_filtro}}\r\n\t\t,@valor_filtro = '{{req.query.coluna_valor_filtro}}'\r\n\t{{/req.query.coluna_valor_filtro}}",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 510,
+        "y": 1540,
+        "wires": [
+            [
+                "76f28cf8872a04fc",
+                "34a853e1efb8d9a9"
+            ]
+        ]
+    },
+    {
         "id": "45d1b1362f6fed7e",
         "type": "serial-port",
         "name": "",
@@ -1261,6 +1380,25 @@
         "encyption": true,
         "trustServerCertificate": true,
         "database": "datadriven_paranoa",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "79735c2dcc39920b",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "dw_paranoa .30",
+        "server": "192.168.0.30",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "dw_paranoa",
         "useUTC": true,
         "connectTimeout": "15000",
         "requestTimeout": "15000",
