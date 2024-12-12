@@ -51,11 +51,13 @@
             "1bacd5491fe16568",
             "9726910130528e2d",
             "bc951981997e9380",
-            "ba72228506384ee7"
+            "ba72228506384ee7",
+            "dac89afb5bc7e732",
+            "0780b6d5c2d928d4"
         ],
         "x": 14,
         "y": 159,
-        "w": 512,
+        "w": 652,
         "h": 1002
     },
     {
@@ -123,8 +125,8 @@
             "4e0a4c052a16253e",
             "76f28cf8872a04fc",
             "4838916082de9f72",
-            "34a853e1efb8d9a9",
-            "fc9c1671431ee222"
+            "fc9c1671431ee222",
+            "bae3c6d1e844d4ec"
         ],
         "x": 14,
         "y": 1479,
@@ -498,53 +500,6 @@
         ]
     },
     {
-        "id": "ee798e7c668b7139",
-        "type": "http in",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "url": "/kanban/v2/movimentar",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 160,
-        "y": 1920,
-        "wires": [
-            [
-                "9f7556d5205d6a82",
-                "4adf83b32dbe669e"
-            ]
-        ]
-    },
-    {
-        "id": "4adf83b32dbe669e",
-        "type": "http response",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "statusCode": "201",
-        "headers": {},
-        "x": 380,
-        "y": 1920,
-        "wires": []
-    },
-    {
-        "id": "9f7556d5205d6a82",
-        "type": "debug",
-        "z": "ae45f2cbf5df9a1f",
-        "d": true,
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 1860,
-        "wires": []
-    },
-    {
         "id": "ea594df6c54eabcc",
         "type": "http request",
         "z": "ae45f2cbf5df9a1f",
@@ -628,80 +583,6 @@
         ]
     },
     {
-        "id": "e993849531bcf72a",
-        "type": "MSSQL",
-        "z": "ae45f2cbf5df9a1f",
-        "mssqlCN": "85b73a9da59d3b52",
-        "name": "",
-        "outField": "testeQuery",
-        "returnType": 0,
-        "throwErrors": 1,
-        "query": "DECLARE @ficha_tecnica_id INT = 121;\r\n\r\nSELECT \r\n\ta.title\r\n\t,CASE \r\n\t\tWHEN a.[type] = 'STRING' THEN av.[value_string]\r\n\t\tWHEN a.[type] = 'NUMBER' THEN CONVERT(VARCHAR(50), av.[value_number])\r\n\t\tWHEN a.[type] = 'BOOLEAN' THEN  CONVERT(VARCHAR(50), av.[value_boolean])\r\n\t\tWHEN a.[type] = 'DATE' THEN  CONVERT(VARCHAR(50), av.[value_date])\r\n\t\tELSE av.[value_list]\r\n\tEND AS valor\r\n\t,av.record_access_key\r\nFROM [datadriven_paranoa].[dbo].[dw_attribute_values] av\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = av.attribute_id\r\nWHERE technical_sheet_id = @ficha_tecnica_id\r\nORDER BY  av.record_access_key, title",
-        "modeOpt": "queryMode",
-        "modeOptType": "query",
-        "queryOpt": "payload",
-        "queryOptType": "editor",
-        "paramsOpt": "queryParams",
-        "paramsOptType": "none",
-        "rows": "rows",
-        "rowsType": "msg",
-        "parseMustache": true,
-        "params": [],
-        "x": 800,
-        "y": 100,
-        "wires": [
-            [
-                "d74c9311615b0216"
-            ]
-        ]
-    },
-    {
-        "id": "bea581e2ea55b3db",
-        "type": "inject",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 640,
-        "y": 100,
-        "wires": [
-            [
-                "e993849531bcf72a"
-            ]
-        ]
-    },
-    {
-        "id": "d74c9311615b0216",
-        "type": "debug",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 100,
-        "wires": []
-    },
-    {
         "id": "b38b6f53fa1c7e93",
         "type": "http response",
         "z": "ae45f2cbf5df9a1f",
@@ -717,6 +598,7 @@
         "id": "f3117f71876de5d8",
         "type": "MSSQL",
         "z": "ae45f2cbf5df9a1f",
+        "d": true,
         "g": "ad9c02e207160b06",
         "mssqlCN": "85b73a9da59d3b52",
         "name": "",
@@ -746,6 +628,7 @@
         "id": "572ec910e71aafe7",
         "type": "function",
         "z": "ae45f2cbf5df9a1f",
+        "d": true,
         "g": "ad9c02e207160b06",
         "name": "recuperaFormulariosAccessKeys",
         "func": "//Separando todos os record access keys dos formulários do datadriven.\nlet recordAccessKeys = [];\nmsg.formulariosDatadriven.forEach((formulario) => {\n    if (!recordAccessKeys.includes(formulario.record_access_key)) {\n        recordAccessKeys.push(formulario.record_access_key);\n    }\n});\nmsg.recordAccessKeys = recordAccessKeys;\n\nreturn msg;",
@@ -769,7 +652,7 @@
         "z": "ae45f2cbf5df9a1f",
         "g": "ad9c02e207160b06",
         "name": "recuperaFormularios",
-        "func": "//Recuperando os formulários do datadriven.\nlet formularios = [];\nmsg.recordAccessKeys.forEach((recordAccessKey) => {\n    formularios.push({\n        PA: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Código do Produto\").valor,\n        PI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"PI\").valor,\n        quantidadePI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Quantidade PI\").valor,\n        unidadeProducao: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Unidade de Produção\").valor\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "func": "//Recuperando os formulários do datadriven.\nlet formularios = [];\n\n/*\nmsg.recordAccessKeys.forEach((recordAccessKey) => {\n    formularios.push({\n        PA: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Código do Produto\").valor,\n        PI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"PI\").valor,\n        quantidadePI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Quantidade PI\").valor,\n        unidadeProducao: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Unidade de Produção\").valor\n    });\n});\n*/\n\nmsg.formulariosDatadriven.forEach((formularioDatadriven) => {\n    formularios.push({\n        PA: formularioDatadriven.codigo_produto,\n        PI: formularioDatadriven.codigo_pi,\n        quantidadePI: formularioDatadriven.mont_qtd_pi,\n        unidadeProducao: formularioDatadriven.uniprod\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -790,7 +673,7 @@
         "z": "ae45f2cbf5df9a1f",
         "g": "ad9c02e207160b06",
         "name": "filtraFormulariosSePAConstaNasOPs",
-        "func": "//Verifica se o PA (PRODUTO) de uma OP do array de OPs também consta em algum formulário do datadriven no campo de PA. Se sim, preserva o formulário em um novo array de formulários.\nlet formularios = [];\nmsg.payload.OPS.forEach((op) => {\n    msg.formularios.forEach((formulario) => {\n        if (formulario.PA === op.PRODUTO) {\n            formularios.push(formulario);\n        }\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "func": "//Verifica se o PA (PRODUTO) de uma OP do array de OPs também consta em algum formulário do datadriven no campo de PA. Se sim, preserva o formulário em um novo array de formulários.\nlet formularios = [];\nmsg.OPs.forEach((op) => {\n    msg.formularios.forEach((formulario) => {\n        if (formulario.PA === op.PRODUTO) {\n            formularios.push(formulario);\n        }\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -887,195 +770,6 @@
         "x": 650,
         "y": 680,
         "wires": []
-    },
-    {
-        "id": "db3410862af7023a",
-        "type": "http in",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "url": "/testeapi",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 110,
-        "y": 2000,
-        "wires": [
-            [
-                "72c91509150dab40"
-            ]
-        ]
-    },
-    {
-        "id": "a1fd0d8f31f82d8a",
-        "type": "http response",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "statusCode": "200",
-        "headers": {
-            "content-type": "application/json"
-        },
-        "x": 400,
-        "y": 2000,
-        "wires": []
-    },
-    {
-        "id": "72c91509150dab40",
-        "type": "function",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "function 1",
-        "func": "const arr = [\n    { \"id\": 0, \"val\": \"valor0\" },\n    { \"id\": 1, \"val\": \"valor1\" },\n    { \"id\": 2, \"val\": \"valor2\" },\n    { \"id\": 3, \"val\": \"valor3\" },\n    { \"id\": 4, \"val\": \"valor4\" },\n    { \"id\": 5, \"val\": \"valor5\" },\n    { \"id\": 6, \"val\": \"valor6\" },\n    { \"id\": 7, \"val\": \"valor7\" },\n    { \"id\": 8, \"val\": \"valor8\" },\n];\n\nconst obj = arr.find((obj) => obj.id === Number(msg.req.query.id));\n\nmsg.payload = obj;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 2000,
-        "wires": [
-            [
-                "a1fd0d8f31f82d8a"
-            ]
-        ]
-    },
-    {
-        "id": "bcc691cbc252a65c",
-        "type": "inject",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 2060,
-        "wires": [
-            [
-                "a4f0d8ea28c62a1e"
-            ]
-        ]
-    },
-    {
-        "id": "a4f0d8ea28c62a1e",
-        "type": "function",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "function 2",
-        "func": "msg.payload = [\n  '0310220156',\n  '0310220136',\n  '0300340007',\n  '0300340008',\n  '0310220157',\n  '0310220135',\n  '0300220710'\n];\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 2060,
-        "wires": [
-            [
-                "2b774230bb1718ef"
-            ]
-        ]
-    },
-    {
-        "id": "2b774230bb1718ef",
-        "type": "split",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "property": "payload",
-        "x": 390,
-        "y": 2060,
-        "wires": [
-            [
-                "b08fa550ad7c0e9d"
-            ]
-        ]
-    },
-    {
-        "id": "e620b16fabcb9c6b",
-        "type": "debug",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 2060,
-        "wires": []
-    },
-    {
-        "id": "b08fa550ad7c0e9d",
-        "type": "http request",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/estruturaProduto?produto={{payload}}",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 530,
-        "y": 2060,
-        "wires": [
-            [
-                "84660f113672b951"
-            ]
-        ]
-    },
-    {
-        "id": "84660f113672b951",
-        "type": "join",
-        "z": "ae45f2cbf5df9a1f",
-        "name": "",
-        "mode": "auto",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": true,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 670,
-        "y": 2060,
-        "wires": [
-            [
-                "e620b16fabcb9c6b"
-            ]
-        ]
     },
     {
         "id": "6bbae599e3181228",
@@ -1178,7 +872,8 @@
         "y": 260,
         "wires": [
             [
-                "f3117f71876de5d8"
+                "f3117f71876de5d8",
+                "dac89afb5bc7e732"
             ]
         ]
     },
@@ -1262,7 +957,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 140,
-        "y": 1540,
+        "y": 1520,
         "wires": [
             [
                 "4838916082de9f72"
@@ -1295,30 +990,12 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 1540,
+        "y": 1520,
         "wires": [
             [
                 "fc9c1671431ee222"
             ]
         ]
-    },
-    {
-        "id": "34a853e1efb8d9a9",
-        "type": "debug",
-        "z": "ae45f2cbf5df9a1f",
-        "g": "d8bc70124c6dec23",
-        "name": "debug 11",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 1560,
-        "wires": []
     },
     {
         "id": "fc9c1671431ee222",
@@ -1342,13 +1019,130 @@
         "parseMustache": true,
         "params": [],
         "x": 510,
-        "y": 1540,
+        "y": 1520,
         "wires": [
             [
                 "76f28cf8872a04fc",
-                "34a853e1efb8d9a9"
+                "bae3c6d1e844d4ec"
             ]
         ]
+    },
+    {
+        "id": "dac89afb5bc7e732",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "listaPAs",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/datadriven/v1/ftp?codigo_ftp=FtpMonSeq&coluna_filtro_nome=codigo_produto&coluna=codigo_pi&coluna=codigo_produto&coluna=mont_qtd_pi&coluna=uniprod",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "0780b6d5c2d928d4"
+            ]
+        ]
+    },
+    {
+        "id": "0780b6d5c2d928d4",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "formulariosDatadriven",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "1f2370a215a26c80"
+            ]
+        ]
+    },
+    {
+        "id": "bae3c6d1e844d4ec",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "9d5ee4f2b34f56dd",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "url": "/datadriven/v1/ftp_nuvem",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1660,
+        "wires": [
+            [
+                "fc6f68a192b6ba56",
+                "9c5026b3f443a8eb"
+            ]
+        ]
+    },
+    {
+        "id": "fc6f68a192b6ba56",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 620,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "9c5026b3f443a8eb",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1700,
+        "wires": []
     },
     {
         "id": "45d1b1362f6fed7e",
