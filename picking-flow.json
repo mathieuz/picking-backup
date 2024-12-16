@@ -134,6 +134,26 @@
         "h": 122
     },
     {
+        "id": "fe0ce541635e79e4",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "API FTP Nuvem Datadriven",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9d5ee4f2b34f56dd",
+            "fc6f68a192b6ba56",
+            "9c5026b3f443a8eb",
+            "abc283bc0d420379",
+            "74f2e8500de7b0e0"
+        ],
+        "x": 14,
+        "y": 1619,
+        "w": 772,
+        "h": 122
+    },
+    {
         "id": "2905a85f8ebace9c",
         "type": "uibuilder",
         "z": "ae45f2cbf5df9a1f",
@@ -1102,6 +1122,7 @@
         "id": "9d5ee4f2b34f56dd",
         "type": "http in",
         "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
         "name": "",
         "url": "/datadriven/v1/ftp_nuvem",
         "method": "get",
@@ -1111,8 +1132,7 @@
         "y": 1660,
         "wires": [
             [
-                "fc6f68a192b6ba56",
-                "9c5026b3f443a8eb"
+                "abc283bc0d420379"
             ]
         ]
     },
@@ -1120,10 +1140,13 @@
         "id": "fc6f68a192b6ba56",
         "type": "http response",
         "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
         "name": "",
         "statusCode": "200",
-        "headers": {},
-        "x": 620,
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 660,
         "y": 1660,
         "wires": []
     },
@@ -1131,18 +1154,70 @@
         "id": "9c5026b3f443a8eb",
         "type": "debug",
         "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
         "name": "debug 12",
         "active": true,
         "tosidebar": true,
-        "console": false,
+        "console": true,
         "tostatus": false,
         "complete": "true",
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
+        "x": 670,
         "y": 1700,
         "wires": []
+    },
+    {
+        "id": "abc283bc0d420379",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "converteRequisicoesParaStringQueriesSQL",
+        "func": "const colunaQuery = msg.req.query.coluna.split(\",\").map((coluna) => { return `'${coluna}'`; }).join(\", \");\nconst colunaFiltroNomeQuery = msg.req.query.coluna_filtro_nome.split(\",\").map((colunaFiltroNome) => { return `'${colunaFiltroNome}'`; }).join(\", \");\nconst coluna_filtro_valor = msg.req.query.coluna_filtro_valor;\n\nconst colunas = msg.req.query.coluna.split(\",\");\nconst filtros = [];\nlet semicolonIndexStart = 0;\nlet semicolonIndexEnd = 0;\nmsg.req.query.coluna_filtro_nome.split(\",\").forEach((coluna, index) => {\n    semicolonIndexEnd = coluna_filtro_valor.indexOf(\";\", semicolonIndexStart);\n    semicolonIndexEnd = semicolonIndexEnd === -1 ? coluna_filtro_valor.length : semicolonIndexEnd;\n\n    const valor = coluna_filtro_valor.substring(semicolonIndexStart, semicolonIndexEnd);\n    const filtro = {\n        filtro: coluna,\n        valor: valor.split(\",\").map((valor) => `'${valor}'`).join(\", \")\n    }\n\n    index === 0 ? filtro.primeiro = true : null;\n\n    filtros.push(filtro);\n\n    semicolonIndexStart = semicolonIndexEnd + 1;\n});\n\nmsg.queryColunasSql = {\n    coluna_select: colunas.map((coluna) => `'${coluna}'`).join(\", \"),\n    filtros: filtros\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 1700,
+        "wires": [
+            [
+                "74f2e8500de7b0e0"
+            ]
+        ]
+    },
+    {
+        "id": "74f2e8500de7b0e0",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "ftpDatadriven2",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": "0",
+        "query": "DECLARE @ficha_tecnica_id INT = {{req.query.id_ftp}};  -- id da ficha t�cnica\r\n\r\nSELECT * FROM\r\n(\r\nSELECT \r\n\ta.attribute\r\n\t,CASE \r\n\t\tWHEN a.[type] = 'STRING' THEN av.[value_string]\r\n\t\tWHEN a.[type] = 'NUMBER' THEN CONVERT(VARCHAR(50), av.[value_number])\r\n\t\tWHEN a.[type] = 'BOOLEAN' THEN  CONVERT(VARCHAR(50), av.[value_boolean])\r\n\t\tWHEN a.[type] = 'DATE' THEN  CONVERT(VARCHAR(50), av.[value_date])\r\n\t\tELSE av.[value_list]\r\n\tEND AS valor\r\n\t,av.record_access_key\r\nFROM [datadriven_paranoa].[dbo].[dw_attribute_values] av\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = av.attribute_id\r\n\tAND a.active = 1\r\nWHERE technical_sheet_id = @ficha_tecnica_id\r\n\tAND av.is_deleted = 0\r\n\t-- colunas do SELECT\r\n\tAND a.attribute IN ({{{queryColunasSql.coluna_select}}})\r\n--ORDER BY  av.record_access_key, a.attribute\r\n) tb_eav\r\nPIVOT\r\n-- usa a record_access_key como piv�, MIN de uma string � ela mesmo\r\n(MIN(valor) FOR attribute IN ({{payload.coluna}})) AS PivotTable\r\n-- coloque as colunas que deseja filtrar aqui\r\n--WHERE codigo_produto IN ('504953950', '423910495') AND codigo_pi IN ('954385945')\r\nWHERE {{#queryColunasSql.filtros}}\r\n\t{{^primeiro}}AND{{/primeiro}} {{filtro}} in ({{{valor}}})\r\n{{/queryColunasSql.filtros}}\r\n--ORDER BY codigo_produto",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 480,
+        "y": 1700,
+        "wires": [
+            [
+                "fc6f68a192b6ba56",
+                "9c5026b3f443a8eb"
+            ]
+        ]
     },
     {
         "id": "45d1b1362f6fed7e",
