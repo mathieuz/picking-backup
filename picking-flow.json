@@ -224,12 +224,15 @@
             "7548b0ccb8cb3fd5",
             "ad140e0359f39fc6",
             "d5541bc74251a5be",
-            "198dd53c67e41bfb",
-            "be339ab9447074e1"
+            "be339ab9447074e1",
+            "231583bd88fc38a4",
+            "e1ec7218310fdf1d",
+            "b5365ae2501749ce",
+            "366d42c4677997a6"
         ],
         "x": 14,
         "y": 2419,
-        "w": 832,
+        "w": 872,
         "h": 462
     },
     {
@@ -1792,7 +1795,7 @@
         "y": 2620,
         "wires": [
             [
-                "198dd53c67e41bfb"
+                "d5541bc74251a5be"
             ]
         ]
     },
@@ -1810,7 +1813,7 @@
         "finalize": "",
         "libs": [],
         "x": 140,
-        "y": 2800,
+        "y": 2840,
         "wires": [
             [
                 "c256a4bb33252f7d"
@@ -1831,7 +1834,7 @@
         "finalize": "",
         "libs": [],
         "x": 410,
-        "y": 2800,
+        "y": 2840,
         "wires": [
             [
                 "38e643435b627055"
@@ -1853,8 +1856,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 2800,
+        "x": 780,
+        "y": 2840,
         "wires": []
     },
     {
@@ -1889,7 +1892,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
+        "x": 640,
         "y": 2840,
         "wires": [
             [
@@ -2135,7 +2138,7 @@
         "z": "ae45f2cbf5df9a1f",
         "g": "7578827c72e85866",
         "name": "filtraEmpenhosDatadriven",
-        "func": "const formulariosDatadriven = msg.formulariosDatadriven;\nconst _3produtosDistintosDatadriven = msg._3produtosDistintosDatadriven;\n\nconst _4empenhosNormalizadosDatadriven = [];\n\nformulariosDatadriven.forEach((formDatadriven, index) => {\n    const codigo_produto = formDatadriven.codigo_produto;\n    const codigo_pi = formDatadriven.codigo_pi;\n    const mont_qtd_pi = Math.floor(Number(formDatadriven.mont_qtd_pi));\n\n    //Tenta recuperar uma op pelo código de produto \n    let op = _4empenhosNormalizadosDatadriven.find(({PA}) => PA === codigo_produto);\n\n    //Se não existe, adiciona o codigo de produto no array.\n    if (!op) {\n        if (codigo_produto) {\n            _4empenhosNormalizadosDatadriven.push({PA: codigo_produto, empenhosNormalizados: []});\n            op = _4empenhosNormalizadosDatadriven.find(({ PA }) => PA === codigo_produto);\n        }\n    }\n\n    //Verificando se os campos principais do formulários são válidos antes de prosseguir para atualizar/adicionar empenhos.\n    if (op && codigo_produto && codigo_pi && mont_qtd_pi > 0) {\n\n        //Verificando se já há empenhos dentro da array empenhosNormalizados da op com o código de produto especificado.\n        //Se sim, verifica se já há algum empenho com o código de pi repetido. Se sim, soma a quantidade atual do emepnho com o do formulário. Se não, adiciona na array de empenhosNormalizados.\n        \n        const opIndex = _4empenhosNormalizadosDatadriven.findIndex(({ PA }) => PA === codigo_produto); //Recuperando o índice da posição da op dentro do array de empenhos normalizados a partir do código do produto informado em um formulário.\n        if (op.empenhosNormalizados.length > 0) {\n\n            /*\n            _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.forEach((empenho, index) => {\n                if (empenho.codigo === codigo_pi) {\n                    empenho.quantidade = empenho.quantidade + mont_qtd_pi;\n                } else {\n                    _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({codigo: codigo_pi, quantidade: mont_qtd_pi});\n                }\n            });\n            */\n\n            const findCodigoPi = _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.find((empenho) => empenho.codigo === codigo_pi);\n\n            if (findCodigoPi) {\n                const empenhoIndex = _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.findIndex((empenho) => empenho.codigo === codigo_pi);\n                _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados[empenhoIndex].quantidade += mont_qtd_pi;\n            } else {\n                _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({ codigo: codigo_pi, quantidade: mont_qtd_pi });\n            }\n\n        } else {\n            _4empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({codigo: codigo_pi, quantidade: mont_qtd_pi});\n        }\n    }\n});\n\nmsg._4empenhosNormalizadosDatadriven = _4empenhosNormalizadosDatadriven;\n\nreturn msg;",
+        "func": "const formulariosDatadriven = msg.formulariosDatadriven;\n\nconst _3empenhosNormalizadosDatadriven = [];\n\nformulariosDatadriven.forEach((formDatadriven, index) => {\n    const codigo_produto = formDatadriven.codigo_produto;\n    const codigo_pi = formDatadriven.codigo_pi;\n    const mont_qtd_pi = Math.floor(Number(formDatadriven.mont_qtd_pi));\n\n    //Tenta recuperar uma op pelo código de produto \n    let op = _3empenhosNormalizadosDatadriven.find(({PA}) => PA === codigo_produto);\n\n    //Se não existe, adiciona o codigo de produto no array.\n    if (!op) {\n        if (codigo_produto) {\n            _3empenhosNormalizadosDatadriven.push({PA: codigo_produto, empenhosNormalizados: []});\n            op = _3empenhosNormalizadosDatadriven.find(({ PA }) => PA === codigo_produto);\n        }\n    }\n\n    //Verificando se os campos principais do formulários são válidos antes de prosseguir para atualizar/adicionar empenhos.\n    if (op && codigo_produto && codigo_pi && mont_qtd_pi > 0) {\n\n        //Verificando se já há empenhos dentro da array empenhosNormalizados da op com o código de produto especificado.\n        //Se sim, verifica se já há algum empenho com o código de pi repetido. Se sim, soma a quantidade atual do emepnho com o do formulário. Se não, adiciona na array de empenhosNormalizados.\n        \n        const opIndex = _3empenhosNormalizadosDatadriven.findIndex(({ PA }) => PA === codigo_produto); //Recuperando o índice da posição da op dentro do array de empenhos normalizados a partir do código do produto informado em um formulário.\n        if (op.empenhosNormalizados.length > 0) {\n\n            /*\n            _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.forEach((empenho, index) => {\n                if (empenho.codigo === codigo_pi) {\n                    empenho.quantidade = empenho.quantidade + mont_qtd_pi;\n                } else {\n                    _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({codigo: codigo_pi, quantidade: mont_qtd_pi});\n                }\n            });\n            */\n\n            const findCodigoPi = _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.find((empenho) => empenho.codigo === codigo_pi);\n\n            if (findCodigoPi) {\n                const empenhoIndex = _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.findIndex((empenho) => empenho.codigo === codigo_pi);\n                _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados[empenhoIndex].quantidade += mont_qtd_pi;\n            } else {\n                _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({ codigo: codigo_pi, quantidade: mont_qtd_pi });\n            }\n\n        } else {\n            _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({codigo: codigo_pi, quantidade: mont_qtd_pi});\n        }\n    }\n});\n\nmsg._3empenhosNormalizadosDatadriven = _3empenhosNormalizadosDatadriven;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2143,32 +2146,10 @@
         "finalize": "",
         "libs": [],
         "x": 150,
-        "y": 2720,
-        "wires": [
-            [
-                "25adf6cde9088eca",
-                "be339ab9447074e1"
-            ]
-        ]
-    },
-    {
-        "id": "198dd53c67e41bfb",
-        "type": "function",
-        "z": "ae45f2cbf5df9a1f",
-        "g": "7578827c72e85866",
-        "name": "getProdutosDistintosDatadriven",
-        "func": "const _3produtosDistintosDatadriven = [];\nmsg.formulariosDatadriven.forEach((formulario) => {\n\n    const codigoProduto = formulario.codigo_produto;\n\n    if (!_3produtosDistintosDatadriven.includes(codigoProduto)) {\n        if (codigoProduto != null) { \n            _3produtosDistintosDatadriven.push(codigoProduto);\n         }\n    }\n});\n\nmsg._3produtosDistintosDatadriven = _3produtosDistintosDatadriven;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 170,
         "y": 2660,
         "wires": [
             [
-                "d5541bc74251a5be"
+                "231583bd88fc38a4"
             ]
         ]
     },
@@ -2182,12 +2163,94 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
+        "complete": "empenhosPaOk",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2640,
+        "wires": []
+    },
+    {
+        "id": "231583bd88fc38a4",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "separaEmpenhosOkNotOkProtheus",
+        "func": "const _2empenhosNormalizadosProtheus = msg._2empenhosNormalizadosProtheus;\nconst _3empenhosNormalizadosDatadriven = msg._3empenhosNormalizadosDatadriven;\n\nconst empenhosPaOk = [];\nconst empenhosPaNotOk = [];\n\n//Iterando sobre as OPs e empenhos do protheus.\n_2empenhosNormalizadosProtheus.forEach((opProtheus) => {\n\n    //Verifica se o código de produto numa OP dos empenhos do datadriven é o mesmo do que o opProtheus.\n    const opDatadriven = _3empenhosNormalizadosDatadriven.find((op) => op.PA === opProtheus.PA);\n\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    //Se existe a mesma OP em ambos os arrays de empenhos, onde os números de PA são iguais, itera sobre os empenhos do protheus para comparar os empenhos do datadriven.\n    if (opDatadriven) {\n        opProtheus.empenhosNormalizados.forEach((empenhoProtheus) => {\n            const empenhoDatadriven = opDatadriven.empenhosNormalizados.find((empenho) => empenho.codigo === empenhoProtheus.codigo);\n\n            if (empenhoDatadriven) {\n                if (empenhoDatadriven.quantidade != empenhoProtheus.quantidade) {\n                    empenhosNotOk.push({ codigo: empenhoDatadriven.codigo, quantidadeDatadriven: empenhoDatadriven.quantidade, quantidadeProtheus: empenhoProtheus.quantidade });\n                } else {\n                    empenhosOk.push({ codigo: empenhoDatadriven.codigo, quantidade: empenhoDatadriven.quantidade });\n                }\n\n            } else {\n                empenhosNotOk.push({ codigo: empenhoProtheus.codigo, quantidadeDatadriven: 0, quantidadeProtheus: empenhoProtheus.quantidade });\n            }\n        });\n\n        empenhosPaOk.push({ PA: opDatadriven.PA, empenhos: empenhosOk });\n        empenhosPaNotOk.push({ PA: opDatadriven.PA, empenhos: empenhosNotOk });\n    }\n});\n\nmsg.empenhosPaOk = empenhosPaOk;\nmsg.empenhosPaNotOk = empenhosPaNotOk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 2700,
+        "wires": [
+            [
+                "e1ec7218310fdf1d"
+            ]
+        ]
+    },
+    {
+        "id": "e1ec7218310fdf1d",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "separaEmpenhosOkNotOkDatadriven",
+        "func": "const _2empenhosNormalizadosProtheus = msg._2empenhosNormalizadosProtheus;\nconst _3empenhosNormalizadosDatadriven = msg._3empenhosNormalizadosDatadriven;\n\nconst empenhosPaOk = msg.empenhosPaOk;\nconst empenhosPaNotOk = msg.empenhosPaNotOk;\n\n_3empenhosNormalizadosDatadriven.forEach((opDatadriven) => {\n\n    const opProtheus = _2empenhosNormalizadosProtheus.find((op) => op.PA === opDatadriven.PA);\n\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    if (opProtheus) {\n        opDatadriven.empenhosNormalizados.forEach((empenhoDatadriven) => {\n            const empenhoProtheus = opProtheus.empenhosNormalizados.find((empenho) => empenho.codigo === empenhoDatadriven.codigo);\n\n            //Verifica se o empenho foi encontrado. E depois verifica se o empenho já existe no array de empenhos.\n            if (empenhoProtheus) {\n                if (empenhoProtheus.quantidade != empenhoDatadriven.quantidade) {\n                    if (!empenhosPaNotOk.find((op) => op.PA === opDatadriven.PA).empenhos.find((empenhoNotOk) => empenhoNotOk.codigo === empenhoProtheus.codigo)) {\n                        empenhosNotOk.push({ codigo: empenhoProtheus.codigo, quantidadeDatadriven: empenhoDatadriven.quantidade, quantidadeProtheus: empenhoProtheus.quantidade })\n                    }\n\n                } else {\n                    //Verificando se o empenho não foi adicionado aos empenhos ok ainda para adicionar. O mesmo para os notOk.\n                    if (!empenhosPaOk.find((op) => op.PA === opDatadriven.PA).empenhos.find((empenhoOk) => empenhoOk.codigo === empenhoProtheus.codigo)) {\n                        empenhosOk.push({ codigo: empenhoProtheus.codigo, quantidade: empenhoProtheus.quantidade });\n                    }\n\n                }\n\n            } else {\n                empenhosNotOk.push({ codigo: empenhoDatadriven.codigo, quantidadeDatadriven: empenhoDatadriven.quantidade, empenhoProtheus: 0 })\n            }\n\n        });\n\n        //Verificando se a OP com o código do PA já existe nas arrays ok e not ok.\n        if (empenhosPaOk.find((op) => op.PA === opDatadriven.PA)) {\n            const opIndex = empenhosPaOk.findIndex((op) => op.PA === opDatadriven.PA);\n            empenhosPaOk[opIndex].empenhos = [...empenhosPaOk[opIndex].empenhos, ...empenhosOk];\n\n        } else {\n            empenhosPaOk.push({ PA: opDatadriven.PA, empenhos: empenhosOk });\n        }\n\n        if (empenhosPaNotOk.find((op) => op.PA === opDatadriven.PA)) {\n            const opIndex = empenhosPaNotOk.findIndex((op) => op.PA === opDatadriven.PA);\n            empenhosPaNotOk[opIndex].empenhos = [...empenhosPaNotOk[opIndex].empenhos, ...empenhosNotOk];\n\n        } else {\n            empenhosPaNotOk.push({ PA: opDatadriven.PA, empenhos: empenhosNotOk });\n        }\n        \n    }\n});\n\nmsg.empenhosPaOk = empenhosPaOk;\nmsg.empenhosPaNotOk = empenhosPaNotOk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 2700,
+        "wires": [
+            [
+                "be339ab9447074e1",
+                "25adf6cde9088eca",
+                "b5365ae2501749ce",
+                "366d42c4677997a6"
+            ]
+        ]
+    },
+    {
+        "id": "b5365ae2501749ce",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "empenhosPaNotOk",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "366d42c4677997a6",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "7578827c72e85866",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
         "complete": "true",
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
-        "y": 2740,
+        "x": 760,
+        "y": 2700,
         "wires": []
     },
     {
