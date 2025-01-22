@@ -181,12 +181,23 @@ function checkLogin(payload, statusCode) {
     if (statusCode === 201) {
         setLoggedOperadorData(data.ID, data.nome);
         menuSelect("CONTADOR");
-        console.log(getLoggedInOperadorData());
         return;
     }
 
     //Se deu erro, exibe a mensagem de erro vindo do payload.
     alert(data.erro + ".");
+}
+
+function checkMovimentacao(statusCode) {
+    if (statusCode === 201) {
+        alert("Movimentação realizada com sucesso!");
+        loadTableData("tabela_etiquetas", []);
+        arrayEtiquetasLidas = [];
+
+        return;
+    }
+
+    alert("Houve um erro ao realizar a movimentação. Tente novamente.");
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -225,6 +236,7 @@ function openFullscreen() {
         elem.onfullscreenerror
     }
 }
+
 
 /* ##################################################################################################### */
 /* ############################################ TABELAS ################################################ */
@@ -311,6 +323,50 @@ function tabelaOrdensPicadasOnClick(tabela_id, row){
     */
 }
 
+var arrayEtiquetasLidas = [];
+
+//Evento no input de etiqueta da movimentação
+document.getElementById("input_numero_etiqueta").onkeydown = (e) => {
+    if (e.key === "Enter") {
+            
+        let numeroEtiqueta = e.target.value;
+
+        let isNumeroEtiquetaRepetido = arrayEtiquetasLidas.find(etiqueta => etiqueta.etiqueta === numeroEtiqueta);
+        if (!isNumeroEtiquetaRepetido) {
+
+            //Verificando se o número da etiqueta é um valor menor que 2000. Se sim, o código lido é referente uma vaga. Dispara na API.
+            if (numeroEtiqueta.match(/^[0-9]+$/) && Number(numeroEtiqueta) < 2000) {
+
+                const operadorData = getLoggedInOperadorData();
+
+                const movimentacaoData = arrayEtiquetasLidas.map(etiqueta => {
+                    return {
+                        identificacao: etiqueta.etiqueta,
+                        local_destino_id: numeroEtiqueta,
+                        tipo_id: 1,
+                        login_id: operadorData.id
+                    }
+                });
+
+                sendToNR("scan_movimentacao", movimentacaoData);
+
+                return;
+            }
+
+            //Verificando se o número da etiqueta compõe-se apenas de números. Se sim, adiciona na array.
+            if (numeroEtiqueta.match(/^[0-9]+$/)) {
+                arrayEtiquetasLidas.push({ "etiqueta": numeroEtiqueta });
+            } else {
+                alert("Etiqueta inválida.");
+            }
+        }
+
+        e.target.value = "";
+        document.getElementById("input_numero_etiqueta").focus();
+        loadTableData("tabela_etiquetas", arrayEtiquetasLidas);
+    }
+}
+
 
 /* ##################################################################################################### */
 /* ########################################### WEBSOCKET ############################################### */
@@ -326,8 +382,6 @@ function sendToNR(topic, payload){
 
 // Listen for incoming messages from Node-RED and action
 uibuilder.onChange('msg', (msg) => {
-
-    console.log(msg);
 
     switch(msg.topic) {
         case "balanca":
@@ -346,6 +400,10 @@ uibuilder.onChange('msg', (msg) => {
         
         case "login":
             checkLogin(msg.payload, msg.statusCode);
+            break;
+        
+        case "movimentacao":
+            checkMovimentacao(msg.statusCode);
             break;
     } 
 })

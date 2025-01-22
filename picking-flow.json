@@ -20,8 +20,8 @@
             "0d47e7594de4f15b",
             "13b6c57e87c42fbc"
         ],
-        "x": 54,
-        "y": 219,
+        "x": 14,
+        "y": 1239,
         "w": 492,
         "h": 82
     },
@@ -38,13 +38,202 @@
             "1c993cc0ec72ade2",
             "b8a2280c43a4bc96",
             "9860ab64a3c60901",
-            "e17d65d1630a152a",
-            "d89b90a1a0cdb877"
+            "f3117f71876de5d8",
+            "572ec910e71aafe7",
+            "1f2370a215a26c80",
+            "6a152377063a37a9",
+            "e85bb975cc2a8ad2",
+            "40cf2d77782218fe",
+            "8d01e4e40a55f9ca",
+            "6bbae599e3181228",
+            "5cd8006b1f2c51a6",
+            "7c2e4c39f93284c9",
+            "1bacd5491fe16568",
+            "9726910130528e2d",
+            "bc951981997e9380",
+            "ba72228506384ee7",
+            "dac89afb5bc7e732",
+            "0780b6d5c2d928d4",
+            "95b4c5c19169c06b",
+            "09a8f20a97255d72",
+            "0d18bdbff0d0a71c",
+            "768781ab3382808e"
         ],
-        "x": 54,
-        "y": -21,
-        "w": 509,
-        "h": 202
+        "x": 14,
+        "y": 219,
+        "w": 652,
+        "h": 1002
+    },
+    {
+        "id": "79c03b6ee5c89ad1",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Comunicação com a balança",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a9d71d2fd03471d3",
+            "269cfd843eecd901"
+        ],
+        "x": 114,
+        "y": 1339,
+        "w": 392,
+        "h": 82
+    },
+    {
+        "id": "814e2363db264d82",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "scan_movimentacao: realiza a movimentação das etiquetas",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ea594df6c54eabcc",
+            "8a27a32bb227898d",
+            "f2aacad60334b29e"
+        ],
+        "x": 14,
+        "y": 1439,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "4c32cf1dc8cca9a6",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Redirecionamento para impressora",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0fa72eb392038713",
+            "9f36704573a025db",
+            "b38b6f53fa1c7e93"
+        ],
+        "x": 14,
+        "y": 119,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "d8bc70124c6dec23",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "API FTP Datadriven",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4e0a4c052a16253e",
+            "76f28cf8872a04fc",
+            "4838916082de9f72",
+            "fc9c1671431ee222",
+            "fcfb96bfa90c08d7"
+        ],
+        "x": 14,
+        "y": 1519,
+        "w": 752,
+        "h": 122
+    },
+    {
+        "id": "fe0ce541635e79e4",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "API FTP Nuvem Datadriven",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9d5ee4f2b34f56dd",
+            "fc6f68a192b6ba56",
+            "abc283bc0d420379",
+            "74f2e8500de7b0e0",
+            "dc1a7e8d52a802d8",
+            "4badd6374931cf9e",
+            "9962938564f7ff15"
+        ],
+        "x": 14,
+        "y": 1659,
+        "w": 1132,
+        "h": 142
+    },
+    {
+        "id": "e1a8957f838a62ce",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "API Ficha Tecnica",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0333c56176a923a6",
+            "82b62a6915ca1980",
+            "b2a276df8378ddf5",
+            "bcee8986de89bfce"
+        ],
+        "x": 14,
+        "y": 1799,
+        "w": 752,
+        "h": 122
+    },
+    {
+        "id": "f85f4312c4344855",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "API Campos Ficha Tecnica",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a76c37ba7e70b9a6",
+            "c51c4a43da6f96e9",
+            "72eca205665020aa",
+            "1ccd17d7c354aa69"
+        ],
+        "x": 14,
+        "y": 1939,
+        "w": 752,
+        "h": 122
+    },
+    {
+        "id": "7578827c72e85866",
+        "type": "group",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Mock PAs Ok/NotOk",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b39641e6fa43b3f6",
+            "d90a751808566b68",
+            "c18c59bb75a97934",
+            "ec28855d233f4e9a",
+            "5679628f1cd6505a",
+            "25adf6cde9088eca",
+            "c256a4bb33252f7d",
+            "0436a999262a8fe3",
+            "38e643435b627055",
+            "6a0a6d94bb907378",
+            "0f28351643c07852",
+            "ddbbbef9149e4c33",
+            "48cbf5c1b7a0306b",
+            "bf91c1a9db617b83",
+            "96fe1fbdec34fe0d",
+            "7548b0ccb8cb3fd5",
+            "ad140e0359f39fc6",
+            "d5541bc74251a5be",
+            "be339ab9447074e1",
+            "231583bd88fc38a4",
+            "e1ec7218310fdf1d",
+            "b5365ae2501749ce",
+            "366d42c4677997a6"
+        ],
+        "x": 14,
+        "y": 2419,
+        "w": 872,
+        "h": 462
     },
     {
         "id": "2905a85f8ebace9c",
@@ -68,8 +257,8 @@
         "title": "",
         "descr": "",
         "editurl": "vscode://fileC:\\Users\\masilva\\.node-red\\uibuilder/pickingv2/?windowId=_blank",
-        "x": 690,
-        "y": 200,
+        "x": 750,
+        "y": 1060,
         "wires": [
             [
                 "de961e6a8e40f126"
@@ -97,8 +286,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 140,
+        "x": 380,
+        "y": 1180,
         "wires": [
             [
                 "2905a85f8ebace9c"
@@ -125,8 +314,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 260,
+        "x": 430,
+        "y": 1280,
         "wires": [
             [
                 "2905a85f8ebace9c"
@@ -150,19 +339,27 @@
                 "t": "eq",
                 "v": "login",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "scan_movimentacao",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
-        "x": 850,
-        "y": 200,
+        "outputs": 3,
+        "x": 890,
+        "y": 1060,
         "wires": [
             [
                 "0cb9aa2fc599b347"
             ],
             [
                 "3e58cd5009990d32"
+            ],
+            [
+                "2e42201a9f6a6689"
             ]
         ]
     },
@@ -183,12 +380,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 240,
-        "y": 100,
+        "x": 180,
+        "y": 260,
         "wires": [
             [
-                "b8a2280c43a4bc96",
-                "d89b90a1a0cdb877"
+                "1bacd5491fe16568",
+                "95b4c5c19169c06b"
             ]
         ]
     },
@@ -198,15 +395,15 @@
         "z": "ae45f2cbf5df9a1f",
         "g": "ad9c02e207160b06",
         "name": "extraiProdutos",
-        "func": "let array_empenhos = [];\n\nmsg.payload.OPS.forEach(function(op) {\n    op.EMPENHOS.forEach(function(empenho) {\n        array_empenhos.push(\n            {\n                OP: op.OP,\n                PA: op.PRODUTO,\n                RECURSO: op.RECURSO,\n                PRODUTO: empenho.PRODUTOEMPENHO,\n                QUANTIDADE: empenho.QUANTIDADEEMPENHO,\n                PREVISAOINICIO: `${op.PREVISAOINICIO[6]}${op.PREVISAOINICIO[7]}/${op.PREVISAOINICIO[4]}${op.PREVISAOINICIO[5]}/${op.PREVISAOINICIO[0]}${op.PREVISAOINICIO[1]}${op.PREVISAOINICIO[2]}${op.PREVISAOINICIO[3]}`\n            }\n        );\n    });\n});\n\nmsg.payload = array_empenhos;\n\nreturn msg;",
+        "func": "let array_empenhos = [];\n\nmsg.OPs.forEach(function(op) {\n    op.EMPENHOS.forEach(function(empenho) {\n        array_empenhos.push(\n            {\n                OP: op.OP,\n                PA: op.PRODUTO,\n                RECURSO: op.RECURSO,\n                PRODUTO: empenho.PRODUTOEMPENHO,\n                QUANTIDADE: empenho.QUANTIDADEEMPENHO,\n                PREVISAOINICIO: `${op.PREVISAOINICIO[6]}${op.PREVISAOINICIO[7]}/${op.PREVISAOINICIO[4]}${op.PREVISAOINICIO[5]}/${op.PREVISAOINICIO[0]}${op.PREVISAOINICIO[1]}${op.PREVISAOINICIO[2]}${op.PREVISAOINICIO[3]}`\n            }\n        );\n    });\n});\n\nmsg.payload = array_empenhos;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 140,
+        "x": 200,
+        "y": 1180,
         "wires": [
             [
                 "93b4b7f9aeceb3db"
@@ -230,8 +427,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 240,
-        "y": 260,
+        "x": 200,
+        "y": 1280,
         "wires": [
             [
                 "1511ac037e335352"
@@ -247,8 +444,8 @@
         "links": [
             "9860ab64a3c60901"
         ],
-        "x": 1175,
-        "y": 160,
+        "x": 1235,
+        "y": 1020,
         "wires": []
     },
     {
@@ -260,12 +457,11 @@
         "links": [
             "d015aa2b301d4fae"
         ],
-        "x": 95,
-        "y": 100,
+        "x": 55,
+        "y": 260,
         "wires": [
             [
-                "1c993cc0ec72ade2",
-                "e17d65d1630a152a"
+                "1c993cc0ec72ade2"
             ]
         ]
     },
@@ -278,8 +474,8 @@
         "links": [
             "13b6c57e87c42fbc"
         ],
-        "x": 935,
-        "y": 220,
+        "x": 995,
+        "y": 1060,
         "wires": []
     },
     {
@@ -291,8 +487,8 @@
         "links": [
             "3e58cd5009990d32"
         ],
-        "x": 95,
-        "y": 260,
+        "x": 55,
+        "y": 1280,
         "wires": [
             [
                 "0d47e7594de4f15b"
@@ -304,10 +500,11 @@
         "type": "serial in",
         "z": "ae45f2cbf5df9a1f",
         "d": true,
+        "g": "79c03b6ee5c89ad1",
         "name": "",
         "serial": "45d1b1362f6fed7e",
-        "x": 250,
-        "y": 380,
+        "x": 190,
+        "y": 1380,
         "wires": [
             [
                 "269cfd843eecd901"
@@ -318,6 +515,7 @@
         "id": "269cfd843eecd901",
         "type": "change",
         "z": "ae45f2cbf5df9a1f",
+        "g": "79c03b6ee5c89ad1",
         "name": "",
         "rules": [
             {
@@ -333,8 +531,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 380,
+        "x": 410,
+        "y": 1380,
         "wires": [
             [
                 "2905a85f8ebace9c"
@@ -345,42 +543,25 @@
         "id": "0fa72eb392038713",
         "type": "http in",
         "z": "ae45f2cbf5df9a1f",
+        "g": "4c32cf1dc8cca9a6",
         "name": "",
         "url": "/pstprnt",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 270,
-        "y": 480,
+        "x": 110,
+        "y": 160,
         "wires": [
             [
-                "6887db15facf2f9c",
                 "9f36704573a025db"
             ]
         ]
     },
     {
-        "id": "6887db15facf2f9c",
-        "type": "debug",
-        "z": "ae45f2cbf5df9a1f",
-        "d": true,
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 520,
-        "wires": []
-    },
-    {
         "id": "9f36704573a025db",
         "type": "http request",
         "z": "ae45f2cbf5df9a1f",
+        "g": "4c32cf1dc8cca9a6",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -393,10 +574,12 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 470,
-        "y": 480,
+        "x": 270,
+        "y": 160,
         "wires": [
-            []
+            [
+                "b38b6f53fa1c7e93"
+            ]
         ]
     },
     {
@@ -411,40 +594,454 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
-        "y": 180,
+        "x": 1090,
+        "y": 1020,
         "wires": [
             [
                 "d015aa2b301d4fae",
-                "264a355889a6be6e"
+                "a1650160effa782b"
             ]
         ]
     },
     {
-        "id": "264a355889a6be6e",
-        "type": "debug",
+        "id": "ea594df6c54eabcc",
+        "type": "http request",
         "z": "ae45f2cbf5df9a1f",
-        "d": true,
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 200,
+        "g": "814e2363db264d82",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/kanban/v2/movimentar/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 210,
+        "y": 1480,
+        "wires": [
+            [
+                "8a27a32bb227898d"
+            ]
+        ]
+    },
+    {
+        "id": "8a27a32bb227898d",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "814e2363db264d82",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "movimentacao",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1480,
+        "wires": [
+            [
+                "2905a85f8ebace9c"
+            ]
+        ]
+    },
+    {
+        "id": "2e42201a9f6a6689",
+        "type": "link out",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "Link Topic In: scan_movimentacao",
+        "mode": "link",
+        "links": [
+            "f2aacad60334b29e"
+        ],
+        "x": 995,
+        "y": 1100,
         "wires": []
     },
     {
-        "id": "e17d65d1630a152a",
+        "id": "f2aacad60334b29e",
+        "type": "link in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "814e2363db264d82",
+        "name": "Link Topic Out: scan_movimentacao",
+        "links": [
+            "2e42201a9f6a6689"
+        ],
+        "x": 55,
+        "y": 1480,
+        "wires": [
+            [
+                "ea594df6c54eabcc"
+            ]
+        ]
+    },
+    {
+        "id": "b38b6f53fa1c7e93",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "4c32cf1dc8cca9a6",
+        "name": "",
+        "statusCode": "201",
+        "headers": {},
+        "x": 420,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f3117f71876de5d8",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "ad9c02e207160b06",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "",
+        "outField": "formulariosDatadriven",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "DECLARE @ficha_tecnica_id INT = 31;\r\n\r\nSELECT \r\n\ta.title\r\n\t,CASE \r\n\t\tWHEN a.[type] = 'STRING' THEN av.[value_string]\r\n\t\tWHEN a.[type] = 'NUMBER' THEN CONVERT(VARCHAR(50), av.[value_number])\r\n\t\tWHEN a.[type] = 'BOOLEAN' THEN  CONVERT(VARCHAR(50), av.[value_boolean])\r\n\t\tWHEN a.[type] = 'DATE' THEN  CONVERT(VARCHAR(50), av.[value_date])\r\n\t\tELSE av.[value_list]\r\n\tEND AS valor\r\n\t,av.record_access_key\r\nFROM [datadriven_paranoa].[dbo].[dw_attribute_values] av\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = av.attribute_id\r\nWHERE technical_sheet_id = @ficha_tecnica_id\r\nAND av.is_deleted = 0\r\nORDER BY  av.record_access_key, title",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "572ec910e71aafe7"
+            ]
+        ]
+    },
+    {
+        "id": "572ec910e71aafe7",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "ad9c02e207160b06",
+        "name": "recuperaFormulariosAccessKeys",
+        "func": "//Separando todos os record access keys dos formulários do datadriven.\nlet recordAccessKeys = [];\nmsg.formulariosDatadriven.forEach((formulario) => {\n    if (!recordAccessKeys.includes(formulario.record_access_key)) {\n        recordAccessKeys.push(formulario.record_access_key);\n    }\n});\nmsg.recordAccessKeys = recordAccessKeys;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "1f2370a215a26c80"
+            ]
+        ]
+    },
+    {
+        "id": "1f2370a215a26c80",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "recuperaFormularios",
+        "func": "//Recuperando os formulários do datadriven.\nlet formularios = [];\n\n/*\nmsg.recordAccessKeys.forEach((recordAccessKey) => {\n    formularios.push({\n        PA: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Código do Produto\").valor,\n        PI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"PI\").valor,\n        quantidadePI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Quantidade PI\").valor,\n        unidadeProducao: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Unidade de Produção\").valor\n    });\n});\n*/\n\nmsg.formulariosDatadriven.forEach((formularioDatadriven) => {\n    formularios.push({\n        PA: formularioDatadriven.codigo_produto,\n        PI: formularioDatadriven.codigo_pi,\n        quantidadePI: formularioDatadriven.mont_qtd_pi,\n        unidadeProducao: formularioDatadriven.uniprod\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 500,
+        "wires": [
+            [
+                "6a152377063a37a9"
+            ]
+        ]
+    },
+    {
+        "id": "6a152377063a37a9",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "filtraFormulariosSePAConstaNasOPs",
+        "func": "//Verifica se o PA (PRODUTO) de uma OP do array de OPs também consta em algum formulário do datadriven no campo de PA. Se sim, preserva o formulário em um novo array de formulários.\nlet formularios = [];\nmsg.OPs.forEach((op) => {\n    msg.formularios.forEach((formulario) => {\n        if (formulario.PA === op.PRODUTO) {\n            formularios.push(formulario);\n        }\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 560,
+        "wires": [
+            [
+                "8d01e4e40a55f9ca",
+                "09a8f20a97255d72"
+            ]
+        ]
+    },
+    {
+        "id": "e85bb975cc2a8ad2",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "montaEmpenhosPorPAPorPIEBancada",
+        "func": "//Pra cada PA, criando um objeto com array de empenhos associados.\nconst PAs = [];\nmsg.numeroPAs.forEach((numeroPA) => {\n\n    //Filtrando todos os formulários referentes a um número de PA.\n    const formulariosPA = msg.formularios.filter((formulario) => formulario.PA === numeroPA);\n\n    //Criando array de empenhos.\n    let empenhos = [];\n    formulariosPA.forEach((formularioPA) => {\n        \n        //Verifica se PI ou unidadeProducao já estão incluídos no array de empenhos. Caso não para ambos, adiciona um novo empenho.\n        if (!empenhos.find((empenho) => empenho.PI === formularioPA.PI) || !empenhos.find((empenho) => empenho.unidadeProducao === formularioPA.unidadeProducao)) {\n            if (formularioPA.PI !== \"\" && formularioPA.quantidadePI != 0) {\n                empenhos.push({ PI: formularioPA.PI, quantidadePI: Number(formularioPA.quantidadePI), unidadeProducao: formularioPA.unidadeProducao });\n            }\n        }\n\n        //Se caso unidade de produção já existir na array de empenhos, localiza o objeto e atualiza a quantidadePI.\n        if (empenhos.find((empenho) => empenho.unidadeProducao === formularioPA.unidadeProducao )) {\n            const empenhoIndex = empenhos.findIndex((empenho) => empenho.unidadeProducao === formularioPA.unidadeProducao);\n            empenhos[empenhoIndex].quantidadePI += Number(formularioPA.quantidadePI);\n        }\n    });\n\n    //Adicionando o novo objeto no array de PAs e seus empenhos.\n    PAs.push({ PA: numeroPA, empenhos: empenhos });\n\n});\nmsg.PAsPorBancada = PAs;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 680,
+        "wires": [
+            [
+                "40cf2d77782218fe"
+            ]
+        ]
+    },
+    {
+        "id": "40cf2d77782218fe",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "montaEmpenhosPorPAPorPI",
+        "func": "const PAs = [];\nmsg.numeroPAs.forEach((numeroPA) => {\n    const formulariosPA = msg.formularios.filter((formulario) => formulario.PA === numeroPA);\n\n    let empenhos = [];\n    formulariosPA.forEach((formularioPA) => {\n        if (!empenhos.find((empenho) => empenho.PI === formularioPA.PI)){\n            if (formularioPA.PI !== \"\" && formularioPA.quantidadePI !== \"0\") {\n                empenhos.push({ PI: formularioPA.PI, quantidadePI: Number(formularioPA.quantidadePI) })\n            }\n        } else {\n            const empenhoIndex = empenhos.findIndex((empenho) => empenho.PI === formularioPA.PI);\n            empenhos[empenhoIndex].quantidadePI += Number(formularioPA.quantidadePI);\n        }\n    });\n\n    PAs.push({ PA: numeroPA, empenhos: empenhos });\n});\nmsg.PAsPorPI = PAs;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 740,
+        "wires": [
+            [
+                "6bbae599e3181228",
+                "768781ab3382808e"
+            ]
+        ]
+    },
+    {
+        "id": "8d01e4e40a55f9ca",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "recuperaNumeroPAs",
+        "func": "//Recuperando todos os PAs do formulário, sem duplicatas.\nconst numeroPAs = [];\nmsg.formularios.forEach((formulario) => {\n    if (!numeroPAs.includes(formulario.PA)) {\n        numeroPAs.push(formulario.PA);\n    }\n});\nmsg.payload = numeroPAs\nmsg.numeroPAs = numeroPAs;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "e85bb975cc2a8ad2"
+            ]
+        ]
+    },
+    {
+        "id": "5fea650ae76cc501",
+        "type": "comment",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "estrutura do PA separado por bancada (DATADRIVEN)",
+        "info": "",
+        "x": 640,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "99806ffae2faefa8",
+        "type": "comment",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "estrutura do PA sem separação por bancada (PROTHEUS)",
+        "info": "",
+        "x": 650,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6bbae599e3181228",
+        "type": "split",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "splitNumeroPAs",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 200,
+        "y": 800,
+        "wires": [
+            [
+                "7c2e4c39f93284c9"
+            ]
+        ]
+    },
+    {
+        "id": "5cd8006b1f2c51a6",
+        "type": "join",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "joinNumeroPAs",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": true,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 200,
+        "y": 920,
+        "wires": [
+            [
+                "9726910130528e2d"
+            ]
+        ]
+    },
+    {
+        "id": "7c2e4c39f93284c9",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/estruturaProduto?produto={{payload}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 190,
+        "y": 860,
+        "wires": [
+            [
+                "5cd8006b1f2c51a6"
+            ]
+        ]
+    },
+    {
+        "id": "1bacd5491fe16568",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "OPs",
+                "pt": "msg",
+                "to": "payload.OPS",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "f3117f71876de5d8",
+                "dac89afb5bc7e732"
+            ]
+        ]
+    },
+    {
+        "id": "9726910130528e2d",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "PAsProtheus",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 980,
+        "wires": [
+            [
+                "bc951981997e9380",
+                "0d18bdbff0d0a71c"
+            ]
+        ]
+    },
+    {
+        "id": "bc951981997e9380",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "compararERecuperarPAsValidosEInvalidos",
+        "func": "//Arrays dos PAs válidos e inválidos\nconst PAsPorPIOk = [];\nconst PAsPorPINotOk = [];\n\n//Percorrendo por cada PA do Protheus.\nmsg.PAsProtheus.forEach((PAProtheus) => {\n\n    //Recuperando os componentes/PIs referente ao PA.\n    const componentes = PAProtheus.COMPONENTES.filter((componente) => componente.TIPO != \"GG\");\n    \n    //Arrays com os empenhos válidos e inválidos.\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    //Percorrendo cada componente do PA.\n    componentes.forEach((componente) => {\n        const PADatadriven = msg.PAsPorPI.find((PA) => PA.PA === PAProtheus.CODIGOPRODUTO); //Recuperando o PA do Datadriven passando o número do PA do Protheus como parâmetro.\n        const PIDatadriven = PADatadriven.empenhos.find((PI) => PI.PI === componente.CODIGO); //Tentando recuperar o PI do PA do Datadriven passando o código do componente como parâmetro.\n\n        //Se o PI do Protheus existir em algum obj da array de empenhos do datadriven, compara se as quantidades de ambos batem.\n        if (PIDatadriven) {\n            if (PIDatadriven.quantidadePI === componente.QUANTIDADE) {\n                empenhosOk.push({ PI: PIDatadriven.PI, quantidadePI: PIDatadriven.quantidadePI }); //Se bater, mantém os valores de empenho.\n            } else {\n                empenhosNotOk.push({ PI: PIDatadriven.PI, quantidadePIDatadriven: PIDatadriven.quantidadePI, quantidadePIProtheus: componente.QUANTIDADE }); //Se não, informa a divergencia das quantidades entre ambos.\n            }\n\n        } else {\n            //Se não existir, erro de cadastro no Datadriven.\n            empenhosNotOk.push({ PI: componente.CODIGO, quantidadePIDatadriven: 0, quantidadePIProtheus: componente.QUANTIDADE });\n        }\n    });\n\n    PAsPorPIOk.push({ PA: PAProtheus.CODIGOPRODUTO, empenhos: empenhosOk });\n    PAsPorPINotOk.push({ PA: PAProtheus.CODIGOPRODUTO, empenhos: empenhosNotOk });\n});\n\n//Percorrendo por cada PA do Datadriven.\nmsg.PAsPorPI.forEach((PADatadriven) => {\n\n    //Array com os empenhos válidos e inválidos.\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    //Percorrendo cada empenho do PA.\n    PADatadriven.empenhos.forEach((empenho) => {\n        const PAProtheus = msg.PAsProtheus.find((PA) => PA.CODIGOPRODUTO === PADatadriven.PA);\n        const PIProtheus = PAProtheus.COMPONENTES.find((PI) => PI.CODIGO === empenho.PI);\n\n        //Se um PI do Datadriven existir em algum obj da array de componentes do protheus, compara se as quantidades de ambos batem.\n        if (PIProtheus) {\n            if (PIProtheus.QUANTIDADE === empenho.quantidadePI) {\n                const empenhoOk = { PI: PIProtheus.CODIGO, quantidadePI: PIProtheus.QUANTIDADE } //Recuperando o empenho para adicionar no array de empenhos.\n                const PAOk = PAsPorPIOk.find((PA) => PA.PA === PADatadriven.PA); //Recuperando o PA dos PAs válidos.\n\n                //Verifica se já há algum objeto parecido no array de empenhos de PAs válidos. Se não, adiciona.\n                if (!PAOk.empenhos.find((empenho) => empenho.PI === empenhoOk.PI && empenho.quantidadePI === empenhoOk.quantidadePI)) {\n                    empenhosOk.push(empenhoOk);\n                }\n\n            } else {\n                const empenhoNotOk = { PI: PIProtheus.CODIGO, quantidadePIDatadriven: empenho.quantidadePI, quantidadePIProtheus: PIProtheus.QUANTIDADE };\n                const PANotOk = PAsPorPINotOk.find((PA) => PA.PA === PADatadriven.PA);\n\n                //Verifica se já há algum objeto parecido no array de empenhos\n                if (!PANotOk.empenhos.find((empenho) => empenho.PI === empenhoNotOk.PI && empenho.quantidadePIDatadriven === empenhoNotOk.quantidadePIDatadriven && empenho.quantidadePIProtheus === empenhoNotOk.quantidadePIProtheus)) {\n                    empenhosNotOk.push(empenhoNotOk);\n                }\n            }\n\n        } else {\n            const empenhoNotOk = { PI: empenho.PI, quantidadePIDatadriven: empenho.quantidadePI, quantidadePIProtheus: 0 };\n            const PANotOk = PAsPorPINotOk.find((PA) => PA.PA === PADatadriven.PA);\n\n            //Verifica se já há algum objeto parecido no array de empenhos\n            if (!PANotOk.empenhos.find((empenho) => empenho.PI === empenhoNotOk.PI && empenho.quantidadePIDatadriven === empenhoNotOk.quantidadePIDatadriven && empenho.quantidadePIProtheus === empenhoNotOk.quantidadePIProtheus)) {\n                empenhosNotOk.push(empenhoNotOk);\n            }\n        }\n    });\n\n    const PADatadrivenIndex = PAsPorPIOk.findIndex((PA) => PA.PA === PADatadriven.PA);\n    empenhosOk.map((empenhoOk) => { PAsPorPIOk[PADatadrivenIndex].empenhos.push(empenhoOk) });\n    empenhosNotOk.map((empenhoNotOk) => { PAsPorPINotOk[PADatadrivenIndex].empenhos.push(empenhoNotOk) });\n});\n\nmsg.PAsPorPIOK = PAsPorPIOk;\nmsg.PAsPorPINotOk = PAsPorPINotOk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 1040,
+        "wires": [
+            [
+                "b8a2280c43a4bc96",
+                "ba72228506384ee7"
+            ]
+        ]
+    },
+    {
+        "id": "ba72228506384ee7",
         "type": "debug",
         "z": "ae45f2cbf5df9a1f",
         "d": true,
         "g": "ad9c02e207160b06",
-        "name": "debug 5",
+        "name": "debug 10",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -453,16 +1050,1035 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 150,
-        "y": 20,
+        "x": 420,
+        "y": 960,
         "wires": []
     },
     {
-        "id": "d89b90a1a0cdb877",
+        "id": "4e0a4c052a16253e",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "",
+        "url": "/datadriven/v1/ftp",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1600,
+        "wires": [
+            [
+                "4838916082de9f72"
+            ]
+        ]
+    },
+    {
+        "id": "76f28cf8872a04fc",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 680,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "4838916082de9f72",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "joinQueryArrays",
+        "func": "if (!Array.isArray(msg.req.query.coluna)) {\n    msg.req.query.coluna = [msg.req.query.coluna];\n}\n\nif (!Array.isArray(msg.req.query.coluna_valor_filtro)) {\n    msg.req.query.coluna_valor_filtro = [msg.req.query.coluna_valor_filtro];\n}\n\nmsg.req.query.coluna = msg.req.query.coluna.join(\",\");\nmsg.req.query.coluna_valor_filtro = msg.req.query.coluna_valor_filtro.join(\";\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1600,
+        "wires": [
+            [
+                "fc9c1671431ee222"
+            ]
+        ]
+    },
+    {
+        "id": "fc9c1671431ee222",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "mssqlCN": "79735c2dcc39920b",
+        "name": "ftpDatadriven",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": "0",
+        "query": "exec dwprc_ft_lista \r\n\t@codigo_ftp = '{{req.query.codigo_ftp}}'\r\n\r\n\t{{#req.query.coluna}}\r\n\t\t,@colunas_select = '{{req.query.coluna}}'\r\n\t{{/req.query.coluna}}\r\n\r\n\t{{#req.query.coluna_filtro_nome}}\r\n\t\t,@codigo_filtro = '{{req.query.coluna_filtro_nome}}'\r\n\t{{/req.query.coluna_filtro_nome}}\r\n\r\n\t{{#req.query.coluna_valor_filtro}}\r\n\t\t,@valor_filtro = '{{req.query.coluna_valor_filtro}}'\r\n\t{{/req.query.coluna_valor_filtro}}",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 510,
+        "y": 1600,
+        "wires": [
+            [
+                "76f28cf8872a04fc",
+                "fcfb96bfa90c08d7"
+            ]
+        ]
+    },
+    {
+        "id": "dac89afb5bc7e732",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "listaPAs",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.62:1880/datadriven/v1/ftp?codigo_ftp=FtpMonSeq&coluna_filtro_nome=codigo_produto&coluna=codigo_pi&coluna=codigo_produto&coluna=mont_qtd_pi&coluna=uniprod",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "0780b6d5c2d928d4"
+            ]
+        ]
+    },
+    {
+        "id": "0780b6d5c2d928d4",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "ad9c02e207160b06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "formulariosDatadriven",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "1f2370a215a26c80"
+            ]
+        ]
+    },
+    {
+        "id": "9d5ee4f2b34f56dd",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "",
+        "url": "/datadriven/v1/ftp_nuvem",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1700,
+        "wires": [
+            [
+                "abc283bc0d420379"
+            ]
+        ]
+    },
+    {
+        "id": "fc6f68a192b6ba56",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 880,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "abc283bc0d420379",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "converteRequisicoesParaStringQueriesSQL",
+        "func": "const colunaQuery = msg.req.query.coluna.split(\",\").map((coluna) => { return `'${coluna}'`; }).join(\", \");\nconst colunaFiltroNomeQuery = msg.req.query.coluna_filtro_nome.split(\",\").map((colunaFiltroNome) => { return `'${colunaFiltroNome}'`; }).join(\", \");\nconst coluna_filtro_valor = msg.req.query.coluna_filtro_valor;\n\nconst colunas = msg.req.query.coluna.split(\",\");\nconst filtros = [];\nlet semicolonIndexStart = 0;\nlet semicolonIndexEnd = 0;\nmsg.req.query.coluna_filtro_nome.split(\",\").forEach((coluna, index) => {\n    semicolonIndexEnd = coluna_filtro_valor.indexOf(\";\", semicolonIndexStart);\n    semicolonIndexEnd = semicolonIndexEnd === -1 ? coluna_filtro_valor.length : semicolonIndexEnd;\n\n    const valor = coluna_filtro_valor.substring(semicolonIndexStart, semicolonIndexEnd);\n    const filtro = {\n        filtro: coluna,\n        valor: valor.split(\",\").map((valor) => `'${valor}'`).join(\", \")\n    }\n\n    index === 0 ? filtro.primeiro = true : null;\n\n    filtros.push(filtro);\n\n    semicolonIndexStart = semicolonIndexEnd + 1;\n});\n\nmsg.queryColunasSql = {\n    coluna_select: colunas.map((coluna) => `'${coluna}'`).join(\", \"),\n    filtros: filtros\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 1740,
+        "wires": [
+            [
+                "74f2e8500de7b0e0"
+            ]
+        ]
+    },
+    {
+        "id": "74f2e8500de7b0e0",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "ftpNuvemDatadriven",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": "0",
+        "query": "DECLARE @ficha_tecnica_id INT = {{req.query.id_ftp}};  -- id da ficha t�cnica\r\n\r\nSELECT * FROM\r\n(\r\nSELECT \r\n\ta.attribute\r\n\t,CASE \r\n\t\tWHEN a.[type] = 'STRING' THEN av.[value_string]\r\n\t\tWHEN a.[type] = 'NUMBER' THEN CONVERT(VARCHAR(50), av.[value_number])\r\n\t\tWHEN a.[type] = 'BOOLEAN' THEN  CONVERT(VARCHAR(50), av.[value_boolean])\r\n\t\tWHEN a.[type] = 'DATE' THEN  CONVERT(VARCHAR(50), av.[value_date])\r\n\t\tELSE av.[value_list]\r\n\tEND AS valor\r\n\t,av.record_access_key\r\nFROM [datadriven_paranoa].[dbo].[dw_attribute_values] av\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = av.attribute_id\r\n\tAND a.active = 1\r\nWHERE technical_sheet_id = @ficha_tecnica_id\r\n\tAND av.is_deleted = 0\r\n\t-- colunas do SELECT\r\n\tAND a.attribute IN ({{{queryColunasSql.coluna_select}}})\r\n--ORDER BY  av.record_access_key, a.attribute\r\n) tb_eav\r\nPIVOT\r\n-- usa a record_access_key como piv�, MIN de uma string � ela mesmo\r\n(MIN(valor) FOR attribute IN ({{payload.coluna}})) AS PivotTable\r\n-- coloque as colunas que deseja filtrar aqui\r\n--WHERE codigo_produto IN ('504953950', '423910495') AND codigo_pi IN ('954385945')\r\nWHERE {{#queryColunasSql.filtros}}\r\n\t{{^primeiro}}AND{{/primeiro}} {{filtro}} in ({{{valor}}})\r\n{{/queryColunasSql.filtros}}\r\nORDER BY {{req.query.order_by}}",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 500,
+        "y": 1740,
+        "wires": [
+            [
+                "dc1a7e8d52a802d8"
+            ]
+        ]
+    },
+    {
+        "id": "0333c56176a923a6",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "e1a8957f838a62ce",
+        "name": "",
+        "url": "/datadriven/v1/ficha_tecnica_nuvem",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 1840,
+        "wires": [
+            [
+                "b2a276df8378ddf5"
+            ]
+        ]
+    },
+    {
+        "id": "82b62a6915ca1980",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "e1a8957f838a62ce",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 680,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "b2a276df8378ddf5",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "e1a8957f838a62ce",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "fichaTecnica",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": "0",
+        "query": "SELECT [id]\r\n      ,[code]\r\n      ,[description]\r\nFROM [datadriven_paranoa].[dbo].[dw_technical_sheet]\r\nORDER BY 1 DESC",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 450,
+        "y": 1840,
+        "wires": [
+            [
+                "82b62a6915ca1980",
+                "bcee8986de89bfce"
+            ]
+        ]
+    },
+    {
+        "id": "bcee8986de89bfce",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "e1a8957f838a62ce",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "a76c37ba7e70b9a6",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "f85f4312c4344855",
+        "name": "",
+        "url": "/datadriven/v1/campos_ficha_tecnica_nuvem",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 1980,
+        "wires": [
+            [
+                "c51c4a43da6f96e9"
+            ]
+        ]
+    },
+    {
+        "id": "c51c4a43da6f96e9",
+        "type": "MSSQL",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "f85f4312c4344855",
+        "mssqlCN": "85b73a9da59d3b52",
+        "name": "camposFichaTecnica",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": "0",
+        "query": "DECLARE @technical_sheet_id INT = {{req.query.id_ftp}};\r\n\r\nSELECT tsa.[attribute_id]\r\n\t  ,a.attribute\r\n\t  ,a.title\r\nFROM [datadriven_paranoa].[dbo].[dw_technical_sheet_attributes] tsa\r\nINNER JOIN dbo.dw_attribute a\r\n\tON a.id = tsa.attribute_id\r\n\tAND a.active = 1\r\nWHERE technical_sheet_id = @technical_sheet_id",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 140,
+        "y": 2020,
+        "wires": [
+            [
+                "72eca205665020aa",
+                "1ccd17d7c354aa69"
+            ]
+        ]
+    },
+    {
+        "id": "72eca205665020aa",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "f85f4312c4344855",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 680,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "1ccd17d7c354aa69",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "f85f4312c4344855",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "a349d780f6b54a4d",
+        "type": "uibuilder",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "topic": "",
+        "url": "wms_doc_api",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "src",
+        "deployedVersion": "7.0.4",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "editurl": "vscode://file\\Users\\masilva\\.node-red\\uibuilder/wms_doc_api/?windowId=_blank",
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dc1a7e8d52a802d8",
+        "type": "switch",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "",
+        "property": "error",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 690,
+        "y": 1740,
+        "wires": [
+            [
+                "fc6f68a192b6ba56"
+            ],
+            [
+                "4badd6374931cf9e"
+            ]
+        ]
+    },
+    {
+        "id": "4badd6374931cf9e",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "error",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 1760,
+        "wires": [
+            [
+                "9962938564f7ff15"
+            ]
+        ]
+    },
+    {
+        "id": "9962938564f7ff15",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "fe0ce541635e79e4",
+        "name": "",
+        "statusCode": "500",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1060,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "fcfb96bfa90c08d7",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "d8bc70124c6dec23",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "6cf99b3e7c7f45c4",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "url": "/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/ordensProducao",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 290,
+        "y": 2180,
+        "wires": [
+            [
+                "cf4fa8c1fece6828"
+            ]
+        ]
+    },
+    {
+        "id": "cf4fa8c1fece6828",
+        "type": "template",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\"OPS\": [\n  {\n    \"CCUSTO\": \"11902\",\n    \"CODROTEIRO\": \"50\",\n    \"DESCRICAO\": \"CONJUNTO MANGUEIRA DE ARREFECIMENTO\",\n    \"EMISSAO\": \"20250103\",\n    \"EMPENHOS\": [\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"VALVULA TERMOSTATO 3 VIAS - 7E0121113B\",\n        \"PRODUTOEMPENHO\": \"1070410052\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"VERSAFIT  1 1/4 X 50 MM - TL 526 68 TIPO C\",\n        \"PRODUTOEMPENHO\": \"1115700307\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"VERSAFIT  1 1/4 X 185 MM - TL 526 68 TIPO C\",\n        \"PRODUTOEMPENHO\": \"1115700325\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"CILP PLASTICO 5GB121093\",\n        \"PRODUTOEMPENHO\": \"1164410050\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"QUICK - 2QB.122.291.G\",\n        \"PRODUTOEMPENHO\": \"1175410258\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"ABRACADEIRA SPACE SAVER �27 X 12MM  - N906870\",\n        \"PRODUTOEMPENHO\": \"1186010002\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"ABRACADEIRA ANEL MOLA - �27 X 12 MM - N105587\",\n        \"PRODUTOEMPENHO\": \"1193010001\",\n        \"QUANTIDADEEMPENHO\": 3978,\n        \"SALDOEMPENHO\": 3978,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANGUEIRA DE ARREFECIMENTO LAVADA\",\n        \"PRODUTOEMPENHO\": \"231022L157\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANGUEIRA DE ARREFECIMENTO LAVADA\",\n        \"PRODUTOEMPENHO\": \"231122L157\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANGUEIRA ARREFECIMENTO LAVADA\",\n        \"PRODUTOEMPENHO\": \"231222L157\",\n        \"QUANTIDADEEMPENHO\": 1326,\n        \"SALDOEMPENHO\": 1326,\n        \"TIPO\": \"PI\"\n      }\n    ],\n    \"HORA_FIM_OP\": \"\",\n    \"HORA_INICIO_OP\": \"\",\n    \"OP\": \"AAVXZN01001\",\n    \"PREVISAOFIM\": \"20250103\",\n    \"PREVISAOINICIO\": \"20250103\",\n    \"PRODUTO\": \"0310220157\",\n    \"QUANTIDADE\": 1326,\n    \"QUANTIDADERACK\": 26,\n    \"RECURSO\": \"MQL006\",\n    \"TURNO\": \"4\",\n    \"UNIDADEMEDIDA\": \"PC\"\n  },\n  {\n    \"CCUSTO\": \"11902\",\n    \"CODROTEIRO\": \"50\",\n    \"DESCRICAO\": \"MANG ARREFECIMENTO RAMIFICADA\",\n    \"EMISSAO\": \"20250103\",\n    \"EMPENHOS\": [\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"VERSAFIT  1 1/4 X 215 MM - TL 526 68 TIPO C\",\n        \"PRODUTOEMPENHO\": \"1115700306\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"VERSAFIT  1 1/4 X 50 MM - TL 526 68 TIPO C\",\n        \"PRODUTOEMPENHO\": \"1115700307\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"LUVA TECIDO TERMO-ENCOLHIVEL � 34 X 200 MM - TL 526 68 TIPO A\",\n        \"PRODUTOEMPENHO\": \"1116430458\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"CONEXAO 3 VIAS - 5Q0.121.087.L\",\n        \"PRODUTOEMPENHO\": \"1150410200\",\n        \"QUANTIDADEEMPENHO\": 2670,\n        \"SALDOEMPENHO\": 2670,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"CLIP 2QB.121.093.D\",\n        \"PRODUTOEMPENHO\": \"1164410031\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"CLIP PLASTICO - N 107 915 - ARAYMOND 221926000 23,5X26,1X20\",\n        \"PRODUTOEMPENHO\": \"1164410034\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"QUICK 5QN.122.291.B\",\n        \"PRODUTOEMPENHO\": \"1175410252\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"ABRACADEIRA CLIPLESS DN23X12 (N912008)\",\n        \"PRODUTOEMPENHO\": \"1181012151\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"ABRACADEIRA SPACE SAVER �27 X 12MM  - N906870\",\n        \"PRODUTOEMPENHO\": \"1186010002\",\n        \"QUANTIDADEEMPENHO\": 9345,\n        \"SALDOEMPENHO\": 9345,\n        \"TIPO\": \"MP\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANG ARREFECIMENTO RAMIFICADA LAVADA\",\n        \"PRODUTOEMPENHO\": \"231022L135\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANG ARREFECIMENTO RAMIFICADA LAVADA\",\n        \"PRODUTOEMPENHO\": \"231122L135\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANG ARREFECIMENTO RAMIFICADA LAVADA\",\n        \"PRODUTOEMPENHO\": \"231222L135\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANG ARREFECIMENTO RAMIFICADA LAVADA\",\n        \"PRODUTOEMPENHO\": \"231322L135\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"PI\"\n      },\n      {\n        \"ARMAZEM\": \"70\",\n        \"DESCRICAOPRODUTOEMPENHO\": \"MANG ARREFECIMENTO RAMIFICADA LAVADA\",\n        \"PRODUTOEMPENHO\": \"231422L135\",\n        \"QUANTIDADEEMPENHO\": 1335,\n        \"SALDOEMPENHO\": 1335,\n        \"TIPO\": \"PI\"\n      }\n    ],\n    \"HORA_FIM_OP\": \"\",\n    \"HORA_INICIO_OP\": \"\",\n    \"OP\": \"AAVXZ701001\",\n    \"PREVISAOFIM\": \"20250106\",\n    \"PREVISAOINICIO\": \"20250106\",\n    \"PRODUTO\": \"0310220135\",\n    \"QUANTIDADE\": 1335,\n    \"QUANTIDADERACK\": 15,\n    \"RECURSO\": \"MQL007\",\n    \"TURNO\": \"4\",\n    \"UNIDADEMEDIDA\": \"PC\"\n  }\n]\n}",
+        "output": "json",
+        "x": 100,
+        "y": 2220,
+        "wires": [
+            [
+                "5ac105d010273e78"
+            ]
+        ]
+    },
+    {
+        "id": "5ac105d010273e78",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 240,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "95b4c5c19169c06b",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "ad9c02e207160b06",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "836246fa0520e8e5",
+        "type": "http in",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "listaPAs",
+        "url": "/datadriven/v1/ftp_teste",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 2320,
+        "wires": [
+            [
+                "7c80f4bc598b7a38"
+            ]
+        ]
+    },
+    {
+        "id": "7c80f4bc598b7a38",
+        "type": "template",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "[\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V008\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1191310002\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410061\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1191310013\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V012\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410052\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410061\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V012\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1191310013\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410053\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"53500600001\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL001FG2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2300340008\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1210130087\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL001FG2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL001FG2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1116430459\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122V136\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1260510017\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL006GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1260510016\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V009\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"231022V156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"A5006\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": null,\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": null\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1210130087\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1116430168\",\n    \"codigo_produto\": \"300340012\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222V136\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"x\",\n    \"codigo_produto\": \"300340012\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1116430468\",\n    \"codigo_produto\": \"300340009\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V009\",\n    \"codigo_produto\": \"300340009\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"x\",\n    \"codigo_produto\": \"300340009\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V007\",\n    \"codigo_produto\": \"300340007\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164430467\",\n    \"codigo_produto\": \"300340007\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V012\",\n    \"codigo_produto\": \"300340012\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"x\",\n    \"codigo_produto\": \"300340007\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340008\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410058\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340012\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1142500110\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1210130086\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2300340011\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1142500110\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340009\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230034V009\",\n    \"codigo_produto\": \"0300340007\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002FG1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1210130086\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL001GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1142500110\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1142500110\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2300340011\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001GM2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700325\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222V157\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310340002\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL001C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"STL002QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"STL002QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"STL002QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300340013\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2312220156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"5440010001\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122L156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231322V156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231322V156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2310220156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410050\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2311220156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410031\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1070410052\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022V157\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700307\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022V157\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222V157\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1193010001\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2313220156\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122V157\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122V157\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410252\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220156\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL006CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220157\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL006QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410224\",\n    \"codigo_produto\": \"1150410233A\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"BPM02MC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1250510010\",\n    \"codigo_produto\": \"1175410257A\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"BPM01MQ1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"1150410233A\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"BPM02MC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1057410001\",\n    \"codigo_produto\": \"1175410257A\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"BPM01MQ1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1165410001\",\n    \"codigo_produto\": \"1175410257A\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"BPM01MQ1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410257\",\n    \"codigo_produto\": \"1175410257A\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"BPM01MQ1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"546014238\",\n    \"codigo_produto\": \"1150410233A\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"BPM02MC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410233\",\n    \"codigo_produto\": \"1150410233A\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"BPM02MC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"1150410233A\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"BPM02MC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122l153\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL004AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1181012225\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186012076\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410256\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222L153\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122L155\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700309\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022L155\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410200\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL004QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222L155\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186012076\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410198\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220155\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL002CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300220691\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300220691\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1260510016\",\n    \"codigo_produto\": \"0300220691\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2300220691\",\n    \"codigo_produto\": \"0300220691\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410200\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022L135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2311220L135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230022L696\",\n    \"codigo_produto\": \"0300220696\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410252\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231422L135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"2\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300220696\",\n    \"mont_qtd_pi\": \"0\",\n    \"uniprod\": \"MQL003TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"2\",\n    \"uniprod\": \"MQL002QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0300220691\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL003GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700327\",\n    \"codigo_produto\": \"0300220696\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL003TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122V156\",\n    \"codigo_produto\": \"2310220156\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL007C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222V156\",\n    \"codigo_produto\": \"2310220156\",\n    \"mont_qtd_pi\": \"1\",\n    \"uniprod\": \"MQL007C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2313220135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007C3\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700306\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2314220135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1116430458\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2311.22.0135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1181012151\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022L135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700307\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007TC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410252\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410200\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122l153\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022l153\",\n    \"codigo_produto\": \"0310220153\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL004C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410200\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222L135\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410034\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"INATIVO\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010002\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL007CN2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220135\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL007CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"1175410257A\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"BPM01MQ1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": null,\n    \"codigo_produto\": null,\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": null\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006C3\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410031\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230022L710\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230022L710\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"230022L710\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410031\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410031\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410031\",\n    \"codigo_produto\": \"0300220710\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL003CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220139\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"IE001\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220136\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL006C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2312.22.L713\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186.01.0002\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186.01.0002\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2310.22.V713\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2310.22.V713\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2310.22.V713\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"2312.22.L713\",\n    \"codigo_produto\": \"0310220713\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL002\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231322L152\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001C1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1160510048\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001GM1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231422L152\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001C2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700324\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231022L152\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001C3\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1181012225\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231122L152\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001C4\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"231222L1152\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186012032\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"2.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410030\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1150410233\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001CL1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186010004\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001AB1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1164410037\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186012076\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001TEX\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410257\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1186012076\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001CN1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1115700323\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001TC1\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"1175410257\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"0.00\",\n    \"uniprod\": \"MQL001QC2\"\n  },\n  {\n    \"erro_num\": 0,\n    \"erro_desc\": \"\",\n    \"codigo_pi\": \"\",\n    \"codigo_produto\": \"0310220152\",\n    \"mont_qtd_pi\": \"1.00\",\n    \"uniprod\": \"MQL001QC1\"\n  }\n]",
+        "output": "json",
+        "x": 220,
+        "y": 2320,
+        "wires": [
+            [
+                "b8465297066880bf"
+            ]
+        ]
+    },
+    {
+        "id": "b8465297066880bf",
+        "type": "http response",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 360,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "b39641e6fa43b3f6",
+        "type": "inject",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 2460,
+        "wires": [
+            [
+                "6a0a6d94bb907378"
+            ]
+        ]
+    },
+    {
+        "id": "d90a751808566b68",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "listaOPs",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/ordensProducao?centroCusto=11902&page=1&pagesize=85&previsaoTermino={{dataTermino}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 480,
+        "y": 2460,
+        "wires": [
+            [
+                "c18c59bb75a97934"
+            ]
+        ]
+    },
+    {
+        "id": "c18c59bb75a97934",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "OPs",
+                "pt": "msg",
+                "to": "payload.OPS",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 2460,
+        "wires": [
+            [
+                "0f28351643c07852"
+            ]
+        ]
+    },
+    {
+        "id": "ec28855d233f4e9a",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "listaPAs",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.62:1880/datadriven/v1/ftp?codigo_ftp=FtpMonSeq&coluna_filtro_nome=codigo_produto&coluna=codigo_pi&coluna=codigo_produto&coluna=mont_qtd_pi&coluna=uniprod",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 100,
+        "y": 2620,
+        "wires": [
+            [
+                "5679628f1cd6505a"
+            ]
+        ]
+    },
+    {
+        "id": "5679628f1cd6505a",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "formulariosDatadriven",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2620,
+        "wires": [
+            [
+                "d5541bc74251a5be"
+            ]
+        ]
+    },
+    {
+        "id": "25adf6cde9088eca",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "recuperaFormularios",
+        "func": "//Recuperando os formulários do datadriven.\nlet formularios = [];\n\n/*\nmsg.recordAccessKeys.forEach((recordAccessKey) => {\n    formularios.push({\n        PA: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Código do Produto\").valor,\n        PI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"PI\").valor,\n        quantidadePI: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Quantidade PI\").valor,\n        unidadeProducao: msg.formulariosDatadriven.find((formulario) => formulario.record_access_key === recordAccessKey && formulario.title === \"Unidade de Produção\").valor\n    });\n});\n*/\n\nmsg.formulariosDatadriven.forEach((formularioDatadriven) => {\n    formularios.push({\n        PA: formularioDatadriven.codigo_produto,\n        PI: formularioDatadriven.codigo_pi,\n        quantidadePI: formularioDatadriven.mont_qtd_pi,\n        unidadeProducao: formularioDatadriven.uniprod\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 2840,
+        "wires": [
+            [
+                "c256a4bb33252f7d"
+            ]
+        ]
+    },
+    {
+        "id": "c256a4bb33252f7d",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "filtraFormulariosSePAConstaNasOPs",
+        "func": "//Verifica se o PA (PRODUTO) de uma OP do array de OPs também consta em algum formulário do datadriven no campo de PA. Se sim, preserva o formulário em um novo array de formulários.\nlet formularios = [];\nmsg.OPs.forEach((op) => {\n    msg.formularios.forEach((formulario) => {\n        if (formulario.PA === op.PRODUTO) {\n            formularios.push(formulario);\n        }\n    });\n});\nmsg.formularios = formularios;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 2840,
+        "wires": [
+            [
+                "38e643435b627055"
+            ]
+        ]
+    },
+    {
+        "id": "0436a999262a8fe3",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "7578827c72e85866",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 2840,
+        "wires": []
+    },
+    {
+        "id": "09a8f20a97255d72",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "ad9c02e207160b06",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "38e643435b627055",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 2840,
+        "wires": [
+            [
+                "0436a999262a8fe3"
+            ]
+        ]
+    },
+    {
+        "id": "a1650160effa782b",
+        "type": "link out",
+        "z": "ae45f2cbf5df9a1f",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [],
+        "x": 1235,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6a0a6d94bb907378",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "formataDataTermino",
+        "func": "const hoje = new Date();\nconst amanha = new Date(hoje);\namanha.setDate(hoje.getUTCDate() + 1);\n\nlet diaAmanha = \"\";\nlet mesAmanha = \"\";\nlet anoAmanha = amanha.getUTCFullYear();\n\ndiaAmanha = amanha.getUTCDate() >= 0 && amanha.getUTCDate() <= 9 ? `0${amanha.getUTCDate()}` : amanha.getUTCDate();\nmesAmanha = amanha.getUTCMonth() >= 0 && amanha.getUTCMonth() <= 9 ? `0${amanha.getUTCMonth() + 1}` : amanha.getUTCMonth() + 1;\n\nconst previsaoTermino = `${anoAmanha}${mesAmanha}${diaAmanha}`;\n\nmsg.dataTermino = previsaoTermino;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 2460,
+        "wires": [
+            [
+                "d90a751808566b68"
+            ]
+        ]
+    },
+    {
+        "id": "0f28351643c07852",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "getProdutosDistintosProtheus",
+        "func": "const _1produtosDistintosProtheus = [];\nmsg.OPs.forEach((op) => {\n    const codigoPa = op.PRODUTO;\n    if (!_1produtosDistintosProtheus.includes(codigoPa)) {\n        _1produtosDistintosProtheus.push(codigoPa);\n    }\n});\n\nmsg.payload = _1produtosDistintosProtheus;\nmsg._1produtosDistintosProtheus = _1produtosDistintosProtheus;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 2500,
+        "wires": [
+            [
+                "ddbbbef9149e4c33"
+            ]
+        ]
+    },
+    {
+        "id": "0d18bdbff0d0a71c",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "ad9c02e207160b06",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "PAsProtheus",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ddbbbef9149e4c33",
+        "type": "split",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 90,
+        "y": 2540,
+        "wires": [
+            [
+                "bf91c1a9db617b83"
+            ]
+        ]
+    },
+    {
+        "id": "48cbf5c1b7a0306b",
+        "type": "join",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 450,
+        "y": 2540,
+        "wires": [
+            [
+                "96fe1fbdec34fe0d"
+            ]
+        ]
+    },
+    {
+        "id": "bf91c1a9db617b83",
+        "type": "http request",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "getAPIProtheusEstrutura",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.31:8061/rest/DATAWAKE_APIS_DIGITALIZACAO/api/v1/estruturaProduto?produto={{ payload }}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 2540,
+        "wires": [
+            [
+                "48cbf5c1b7a0306b"
+            ]
+        ]
+    },
+    {
+        "id": "96fe1fbdec34fe0d",
+        "type": "change",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "PAsProtheus",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 2540,
+        "wires": [
+            [
+                "7548b0ccb8cb3fd5"
+            ]
+        ]
+    },
+    {
+        "id": "768781ab3382808e",
         "type": "debug",
         "z": "ae45f2cbf5df9a1f",
         "g": "ad9c02e207160b06",
-        "name": "debug 3",
+        "name": "debug 21",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -472,7 +2088,170 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 410,
-        "y": 20,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7548b0ccb8cb3fd5",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "normalizaEmpenhosProtheus",
+        "func": "const pasProtheus = msg.PAsProtheus;\nconst ops = msg.OPs\n\nconst _2empenhosNormalizadosProtheus = [];\n\npasProtheus.forEach((pa) => {\n    const op = ops.find((op) => op.PRODUTO === pa.CODIGOPRODUTO);\n\n    if (op) {\n        const arrayEmpenhos = op.EMPENHOS.map((empenho) => {\n            return {codigo: empenho.PRODUTOEMPENHO, quantidade: Math.floor(empenho.QUANTIDADEEMPENHO / op.QUANTIDADE)}\n        });\n\n        _2empenhosNormalizadosProtheus.push({PA: pa.CODIGOPRODUTO, empenhosNormalizados: arrayEmpenhos})\n    }\n});\n\nmsg._2empenhosNormalizadosProtheus = _2empenhosNormalizadosProtheus;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 2580,
+        "wires": [
+            [
+                "ec28855d233f4e9a",
+                "ad140e0359f39fc6"
+            ]
+        ]
+    },
+    {
+        "id": "ad140e0359f39fc6",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "7578827c72e85866",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "d5541bc74251a5be",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "filtraEmpenhosDatadriven",
+        "func": "const formulariosDatadriven = msg.formulariosDatadriven;\n\nconst _3empenhosNormalizadosDatadriven = [];\n\nformulariosDatadriven.forEach((formDatadriven, index) => {\n    const codigo_produto = formDatadriven.codigo_produto;\n    const codigo_pi = formDatadriven.codigo_pi;\n    const mont_qtd_pi = Math.floor(Number(formDatadriven.mont_qtd_pi));\n\n    //Tenta recuperar uma op pelo código de produto \n    let op = _3empenhosNormalizadosDatadriven.find(({PA}) => PA === codigo_produto);\n\n    //Se não existe, adiciona o codigo de produto no array.\n    if (!op) {\n        if (codigo_produto) {\n            _3empenhosNormalizadosDatadriven.push({PA: codigo_produto, empenhosNormalizados: []});\n            op = _3empenhosNormalizadosDatadriven.find(({ PA }) => PA === codigo_produto);\n        }\n    }\n\n    //Verificando se os campos principais do formulários são válidos antes de prosseguir para atualizar/adicionar empenhos.\n    if (op && codigo_produto && codigo_pi && mont_qtd_pi > 0) {\n\n        //Verificando se já há empenhos dentro da array empenhosNormalizados da op com o código de produto especificado.\n        //Se sim, verifica se já há algum empenho com o código de pi repetido. Se sim, soma a quantidade atual do emepnho com o do formulário. Se não, adiciona na array de empenhosNormalizados.\n        \n        const opIndex = _3empenhosNormalizadosDatadriven.findIndex(({ PA }) => PA === codigo_produto); //Recuperando o índice da posição da op dentro do array de empenhos normalizados a partir do código do produto informado em um formulário.\n        if (op.empenhosNormalizados.length > 0) {\n\n            /*\n            _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.forEach((empenho, index) => {\n                if (empenho.codigo === codigo_pi) {\n                    empenho.quantidade = empenho.quantidade + mont_qtd_pi;\n                } else {\n                    _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({codigo: codigo_pi, quantidade: mont_qtd_pi});\n                }\n            });\n            */\n\n            const findCodigoPi = _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.find((empenho) => empenho.codigo === codigo_pi);\n\n            if (findCodigoPi) {\n                const empenhoIndex = _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.findIndex((empenho) => empenho.codigo === codigo_pi);\n                _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados[empenhoIndex].quantidade += mont_qtd_pi;\n            } else {\n                _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({ codigo: codigo_pi, quantidade: mont_qtd_pi });\n            }\n\n        } else {\n            _3empenhosNormalizadosDatadriven[opIndex].empenhosNormalizados.push({codigo: codigo_pi, quantidade: mont_qtd_pi});\n        }\n    }\n});\n\nmsg._3empenhosNormalizadosDatadriven = _3empenhosNormalizadosDatadriven;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 150,
+        "y": 2660,
+        "wires": [
+            [
+                "231583bd88fc38a4"
+            ]
+        ]
+    },
+    {
+        "id": "be339ab9447074e1",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "7578827c72e85866",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2640,
+        "wires": []
+    },
+    {
+        "id": "231583bd88fc38a4",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "separaEmpenhosOkNotOkProtheus",
+        "func": "const _2empenhosNormalizadosProtheus = msg._2empenhosNormalizadosProtheus;\nconst _3empenhosNormalizadosDatadriven = msg._3empenhosNormalizadosDatadriven;\n\nconst empenhosPaOk = [];\nconst empenhosPaNotOk = [];\n\n//Iterando sobre as OPs e empenhos do protheus.\n_2empenhosNormalizadosProtheus.forEach((opProtheus) => {\n\n    //Verifica se o código de produto numa OP dos empenhos do datadriven é o mesmo do que o opProtheus.\n    const opDatadriven = _3empenhosNormalizadosDatadriven.find((op) => op.PA === opProtheus.PA);\n\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    //Se existe a mesma OP em ambos os arrays de empenhos, onde os números de PA são iguais, itera sobre os empenhos do protheus para comparar os empenhos do datadriven.\n    if (opDatadriven) {\n        opProtheus.empenhosNormalizados.forEach((empenhoProtheus) => {\n            const empenhoDatadriven = opDatadriven.empenhosNormalizados.find((empenho) => empenho.codigo === empenhoProtheus.codigo);\n\n            if (empenhoDatadriven) {\n                if (empenhoDatadriven.quantidade != empenhoProtheus.quantidade) {\n                    empenhosNotOk.push({ codigo: empenhoDatadriven.codigo, quantidadeDatadriven: empenhoDatadriven.quantidade, quantidadeProtheus: empenhoProtheus.quantidade });\n                } else {\n                    empenhosOk.push({ codigo: empenhoDatadriven.codigo, quantidade: empenhoDatadriven.quantidade });\n                }\n\n            } else {\n                empenhosNotOk.push({ codigo: empenhoProtheus.codigo, quantidadeDatadriven: 0, quantidadeProtheus: empenhoProtheus.quantidade });\n            }\n        });\n\n        empenhosPaOk.push({ PA: opDatadriven.PA, empenhos: empenhosOk });\n        empenhosPaNotOk.push({ PA: opDatadriven.PA, empenhos: empenhosNotOk });\n    }\n});\n\nmsg.empenhosPaOk = empenhosPaOk;\nmsg.empenhosPaNotOk = empenhosPaNotOk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 2700,
+        "wires": [
+            [
+                "e1ec7218310fdf1d"
+            ]
+        ]
+    },
+    {
+        "id": "e1ec7218310fdf1d",
+        "type": "function",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "separaEmpenhosOkNotOkDatadriven",
+        "func": "const _2empenhosNormalizadosProtheus = msg._2empenhosNormalizadosProtheus;\nconst _3empenhosNormalizadosDatadriven = msg._3empenhosNormalizadosDatadriven;\n\nconst empenhosPaOk = msg.empenhosPaOk;\nconst empenhosPaNotOk = msg.empenhosPaNotOk;\n\n_3empenhosNormalizadosDatadriven.forEach((opDatadriven) => {\n\n    const opProtheus = _2empenhosNormalizadosProtheus.find((op) => op.PA === opDatadriven.PA);\n\n    const empenhosOk = [];\n    const empenhosNotOk = [];\n\n    if (opProtheus) {\n        opDatadriven.empenhosNormalizados.forEach((empenhoDatadriven) => {\n            const empenhoProtheus = opProtheus.empenhosNormalizados.find((empenho) => empenho.codigo === empenhoDatadriven.codigo);\n\n            //Verifica se o empenho foi encontrado. E depois verifica se o empenho já existe no array de empenhos.\n            if (empenhoProtheus) {\n                if (empenhoProtheus.quantidade != empenhoDatadriven.quantidade) {\n                    if (!empenhosPaNotOk.find((op) => op.PA === opDatadriven.PA).empenhos.find((empenhoNotOk) => empenhoNotOk.codigo === empenhoProtheus.codigo)) {\n                        empenhosNotOk.push({ codigo: empenhoProtheus.codigo, quantidadeDatadriven: empenhoDatadriven.quantidade, quantidadeProtheus: empenhoProtheus.quantidade })\n                    }\n\n                } else {\n                    //Verificando se o empenho não foi adicionado aos empenhos ok ainda para adicionar. O mesmo para os notOk.\n                    if (!empenhosPaOk.find((op) => op.PA === opDatadriven.PA).empenhos.find((empenhoOk) => empenhoOk.codigo === empenhoProtheus.codigo)) {\n                        empenhosOk.push({ codigo: empenhoProtheus.codigo, quantidade: empenhoProtheus.quantidade });\n                    }\n\n                }\n\n            } else {\n                empenhosNotOk.push({ codigo: empenhoDatadriven.codigo, quantidadeDatadriven: empenhoDatadriven.quantidade, empenhoProtheus: 0 })\n            }\n\n        });\n\n        //Verificando se a OP com o código do PA já existe nas arrays ok e not ok.\n        if (empenhosPaOk.find((op) => op.PA === opDatadriven.PA)) {\n            const opIndex = empenhosPaOk.findIndex((op) => op.PA === opDatadriven.PA);\n            empenhosPaOk[opIndex].empenhos = [...empenhosPaOk[opIndex].empenhos, ...empenhosOk];\n\n        } else {\n            empenhosPaOk.push({ PA: opDatadriven.PA, empenhos: empenhosOk });\n        }\n\n        if (empenhosPaNotOk.find((op) => op.PA === opDatadriven.PA)) {\n            const opIndex = empenhosPaNotOk.findIndex((op) => op.PA === opDatadriven.PA);\n            empenhosPaNotOk[opIndex].empenhos = [...empenhosPaNotOk[opIndex].empenhos, ...empenhosNotOk];\n\n        } else {\n            empenhosPaNotOk.push({ PA: opDatadriven.PA, empenhos: empenhosNotOk });\n        }\n        \n    }\n});\n\nmsg.empenhosPaOk = empenhosPaOk;\nmsg.empenhosPaNotOk = empenhosPaNotOk;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 2700,
+        "wires": [
+            [
+                "be339ab9447074e1",
+                "25adf6cde9088eca",
+                "b5365ae2501749ce",
+                "366d42c4677997a6"
+            ]
+        ]
+    },
+    {
+        "id": "b5365ae2501749ce",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "d": true,
+        "g": "7578827c72e85866",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "empenhosPaNotOk",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2760,
+        "wires": []
+    },
+    {
+        "id": "366d42c4677997a6",
+        "type": "debug",
+        "z": "ae45f2cbf5df9a1f",
+        "g": "7578827c72e85866",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 2700,
         "wires": []
     },
     {
@@ -494,5 +2273,43 @@
         "out": "char",
         "addchar": "",
         "responsetimeout": "10000"
+    },
+    {
+        "id": "85b73a9da59d3b52",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "BD Datadriven Paranoa",
+        "server": "186.193.228.29",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "datadriven_paranoa",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "79735c2dcc39920b",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "dw_paranoa .30",
+        "server": "192.168.0.30",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "dw_paranoa",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "30000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
     }
 ]
